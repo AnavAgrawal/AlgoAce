@@ -1,0 +1,50 @@
+{"Submission": "{'rating': 1700, 'verdict': 'OK', 'name': 'Baby Ehab Partitions Again', 'tags': ['bitmasks', 'constructive algorithms', 'dp', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1516/C'}"}
+{"Submission": "{'rating': 1700, 'verdict': 'RUNTIME_ERROR', 'name': 'Baby Ehab Partitions Again', 'tags': ['bitmasks', 'constructive algorithms', 'dp', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1516/C'}"}
+{"Submission": "{'rating': 1700, 'verdict': 'WRONG_ANSWER', 'name': 'Baby Ehab Partitions Again', 'tags': ['bitmasks', 'constructive algorithms', 'dp', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1516/C'}"}
+{"Submission": "{'rating': 1700, 'verdict': 'OK', 'name': 'Manhattan Subarrays', 'tags': ['brute force', 'geometry', 'greedy', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1550/C'}"}
+{"Submission": "{'rating': 1700, 'verdict': 'OK', 'name': 'Cobb', 'tags': ['bitmasks', 'brute force', 'greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1554/B'}"}
+{"Submission": "{'rating': 1700, 'verdict': 'COMPILATION_ERROR', 'name': 'Cobb', 'tags': ['bitmasks', 'brute force', 'greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1554/B'}"}
+{"Submission": "{'rating': 1700, 'verdict': 'WRONG_ANSWER', 'name': 'Cobb', 'tags': ['bitmasks', 'brute force', 'greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1554/B'}"}
+{"Submission": "{'rating': 2200, 'verdict': 'OK', 'name': 'Reverse Card (Hard Version)', 'tags': ['brute force', 'math', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1972/D2'}"}
+{"Submission": "{'rating': 800, 'verdict': 'OK', 'name': 'Contest Proposal', 'tags': ['brute force', 'greedy', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1972/A'}"}
+{"Submission": "{'rating': 800, 'verdict': 'COMPILATION_ERROR', 'name': 'Contest Proposal', 'tags': ['brute force', 'greedy', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1972/A'}"}
+{"Submission": "{'rating': 1600, 'verdict': 'RUNTIME_ERROR', 'name': 'Staircase', 'tags': ['*special'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/D'}"}
+{"Submission": "{'rating': 1500, 'verdict': 'OK', 'name': 'Firewood', 'tags': ['*special'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/C'}"}
+{"Submission": "{'rating': 1400, 'verdict': 'OK', 'name': 'Clock in the Pool', 'tags': ['*special', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/B'}"}
+{"Submission": "{'rating': 1100, 'verdict': 'OK', 'name': '1-3-5', 'tags': ['*special', 'dp'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/A'}"}
+{"Submission": "{'rating': 1400, 'verdict': 'OK', 'name': 'Reverse Card (Easy Version)', 'tags': ['brute force', 'math', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1972/D1'}"}
+{"Submission": "{'rating': 1400, 'verdict': 'OK', 'name': 'Permutation Counting', 'tags': ['binary search', 'constructive algorithms', 'greedy', 'implementation', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1972/C'}"}
+{"Submission": "{'rating': 1400, 'verdict': 'WRONG_ANSWER', 'name': 'Permutation Counting', 'tags': ['binary search', 'constructive algorithms', 'greedy', 'implementation', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1972/C'}"}
+{"Submission": "{'rating': 1400, 'verdict': 'WRONG_ANSWER', 'name': 'Permutation Counting', 'tags': ['binary search', 'constructive algorithms', 'greedy', 'implementation', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1972/C'}"}
+{"Submission": "{'rating': 900, 'verdict': 'OK', 'name': 'Coin Games', 'tags': ['games'], 'problem_url': 'https://codeforces.com/problemset/problem/1972/B'}"}
+{"Submission": "{'rating': '', 'verdict': 'WRONG_ANSWER', 'name': 'Jumping on Tiles', 'tags': ['*special', 'constructive algorithms', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/E'}"}
+{"Submission": "{'rating': '', 'verdict': 'WRONG_ANSWER', 'name': 'Jumping on Tiles', 'tags': ['*special', 'constructive algorithms', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/E'}"}
+{"Submission": "{'rating': '', 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Jumping on Tiles', 'tags': ['*special', 'constructive algorithms', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/E'}"}
+{"Submission": "{'rating': '', 'verdict': 'OK', 'name': 'Traffic Light', 'tags': ['*special'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/D'}"}
+{"Submission": "{'rating': '', 'verdict': 'COMPILATION_ERROR', 'name': 'Traffic Light', 'tags': ['*special'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/D'}"}
+{"Submission": "{'rating': '', 'verdict': 'RUNTIME_ERROR', 'name': 'Traffic Light', 'tags': ['*special'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/D'}"}
+{"Submission": "{'rating': '', 'verdict': 'RUNTIME_ERROR', 'name': 'Traffic Light', 'tags': ['*special'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/D'}"}
+{"Submission": "{'rating': '', 'verdict': 'OK', 'name': 'Count the Number of Pairs', 'tags': ['*special', 'greedy', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/C'}"}
+{"Submission": "{'rating': '', 'verdict': 'COMPILATION_ERROR', 'name': 'Count the Number of Pairs', 'tags': ['*special', 'greedy', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/C'}"}
+{"Submission": "{'rating': '', 'verdict': 'OK', 'name': 'Compare T-Shirt Sizes', 'tags': ['*special', 'implementation', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/B'}"}
+{"Submission": "{'rating': '', 'verdict': 'OK', 'name': 'Spy Detected!', 'tags': ['*special', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/A'}"}
+{"Submission": "{'rating': '', 'verdict': 'OK', 'name': 'Spy Detected!', 'tags': ['*special', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/A'}"}
+{"Submission": "{'rating': 1100, 'verdict': 'OK', 'name': 'Binary Cut', 'tags': ['greedy', 'implementation', 'sortings', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/D'}"}
+{"Submission": "{'rating': 1500, 'verdict': 'OK', 'name': 'Find the Car', 'tags': ['binary search', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/E'}"}
+{"Submission": "{'rating': 1100, 'verdict': 'WRONG_ANSWER', 'name': 'Binary Cut', 'tags': ['greedy', 'implementation', 'sortings', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/D'}"}
+{"Submission": "{'rating': 1100, 'verdict': 'WRONG_ANSWER', 'name': 'Binary Cut', 'tags': ['greedy', 'implementation', 'sortings', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/D'}"}
+{"Submission": "{'rating': 900, 'verdict': 'OK', 'name': 'Clock and Strings', 'tags': ['implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/C'}"}
+{"Submission": "{'rating': 800, 'verdict': 'OK', 'name': 'Different String', 'tags': ['implementation', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/B'}"}
+{"Submission": "{'rating': 800, 'verdict': 'OK', 'name': 'My First Sorting Problem', 'tags': ['implementation', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/A'}"}
+{"Submission": "{'rating': 1600, 'verdict': 'OK', 'name': 'Good Triples', 'tags': ['brute force', 'combinatorics', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1907/E'}"}
+{"Submission": "{'rating': 1600, 'verdict': 'COMPILATION_ERROR', 'name': 'Good Triples', 'tags': ['brute force', 'combinatorics', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1907/E'}"}
+{"Submission": "{'rating': 1700, 'verdict': 'OK', 'name': 'Monsters And Spells', 'tags': ['binary search', 'data structures', 'dp', 'greedy', 'implementation', 'math', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1626/C'}"}
+{"Submission": "{'rating': 1700, 'verdict': 'OK', 'name': 'Another Problem About Dividing Numbers', 'tags': ['constructive algorithms', 'math', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1538/D'}"}
+{"Submission": "{'rating': 1100, 'verdict': 'COMPILATION_ERROR', 'name': 'Username', 'tags': ['*special', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1910/A'}"}
+{"Submission": "{'rating': 1600, 'verdict': 'OK', 'name': 'Cells Arrangement', 'tags': ['constructive algorithms'], 'problem_url': 'https://codeforces.com/problemset/problem/1968/E'}"}
+{"Submission": "{'rating': 1300, 'verdict': 'OK', 'name': 'Permutation Game', 'tags': ['brute force', 'dfs and similar', 'games', 'graphs', 'greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1968/D'}"}
+{"Submission": "{'rating': 1000, 'verdict': 'OK', 'name': 'Assembly via Remainders', 'tags': ['constructive algorithms', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1968/C'}"}
+{"Submission": "{'rating': 800, 'verdict': 'OK', 'name': 'Prefiquence', 'tags': ['greedy', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1968/B'}"}
+{"Submission": "{'rating': 800, 'verdict': 'OK', 'name': 'Maximize?', 'tags': ['brute force', 'math', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1968/A'}"}
+{"Submission": "{'rating': 800, 'verdict': 'OK', 'name': 'Two Friends', 'tags': ['constructive algorithms', 'implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1969/A'}"}
+{"Submission": "{'rating': 1100, 'verdict': 'OK', 'name': 'Rectangle Filling', 'tags': ['constructive algorithms', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1966/B'}"}
