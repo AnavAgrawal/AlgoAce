@@ -37,7 +37,7 @@ def run(host, port):
     embedded_query = embeddings(context=query, data_to_embed=pw.this.query)
 
     # Build prompt using indexed data
-    responses = prompt(index, embedded_query, pw.this.query)
+    responses = prompt(index, embedded_query, pw.this.query, pw.this.language)
 
     # Feed the prompt to ChatGPT and obtain the generated answer.
     response_writer(responses)

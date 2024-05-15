@@ -23,18 +23,28 @@ with st.sidebar:
         <img src="https://th.bing.com/th/id/OIG3.4KSN22kFFkbCFQZm_C8y?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Logo" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; display: inline-block;">
         <br>
         <h1 style="margin-top: 10px;">Algo  Ace</h1>
+        <br>
     </div>
     """
 
     # Use Markdown to render the HTML and CSS
     st.markdown(circular_logo_html, unsafe_allow_html=True)
 
+    programming_language = st.text_input(
+    "Enter preferred programming language (Optional):",
+    placeholder="Python/C++/Java etc.",
+    help="Any code output will be in this langauge."
+    )
+
+
     st.markdown(
         "## How to use\n"
         "1. Enter your codeforces handle (Case Sensitive).\n"
         "3. Ask any question and you will get personalized answers.\n"
     )
+
     st.markdown("---")
+
     st.markdown("# About")
     st.markdown(
         "AI app to help user with personalized competitive programming answers. "
@@ -42,7 +52,7 @@ with st.sidebar:
         "to build real-time LLM(Large Language Model)-enabled data pipeline in Python and join data from multiple input sources\n"
 
     )
-    st.markdown("[View the source code on GitHub](https://github.com/Boburmirzo/chatgpt-api-python-sales)")
+    st.markdown("[View the source code on GitHub](https://github.com/AnavAgrawal/AlgoAce)")
 
 
 
@@ -73,7 +83,8 @@ if cf_handle and question:
         st.error("Failed to process file. Please check the codeforces handle")
 
     url = f'http://{api_host}:{api_port}/'
-    data = {"query": question}
+    data = {"query": question,
+            "language" : programming_language}
 
     response = requests.post(url, json=data)
 
