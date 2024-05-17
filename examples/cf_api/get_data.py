@@ -42,7 +42,7 @@ def send_request(cf_handle):
                     'problem_url': f"https://codeforces.com/problemset/problem/{problem.get('contestId', '')}/{problem.get('index', '')}",
                 }
 
-                doc_object = {"Submission": str(deal)}
+                doc_object = {"doc": str(deal)}
                 file.write(json.dumps(doc_object) + '\n')
 
         # print(data['result'][0])

@@ -10,10 +10,10 @@ import os
 
 def run(host, port):
     # Given a user question as a query from your API
-    query, response_writer = pw.io.http.rest_connector(
+    query_context, response_writer = pw.io.http.rest_connector(
         host=host,
         port=port,
-        schema=QueryInputSchema,
+        schema =QueryInputSchema,
         autocommit_duration_ms=50,
     )
 
@@ -34,7 +34,7 @@ def run(host, port):
     index = index_embeddings(embedded_data)
 
     # Generate embeddings for the query from the OpenAI Embeddings API
-    embedded_query = embeddings(context=query, data_to_embed=pw.this.query)
+    embedded_query = embeddings(context=query_context, data_to_embed=pw.this.query)
 
     # Build prompt using indexed data
     responses = prompt(index, embedded_query, pw.this.query, pw.this.language)
@@ -52,3 +52,4 @@ class DataInputSchema(pw.Schema):
 
 class QueryInputSchema(pw.Schema):
     query: str
+    language : str
