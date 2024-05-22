@@ -1,10 +1,23 @@
+{"doc": "{'rating': '', 'name': 'Money Buys Less Happiness Now ', 'tags': ['data structures', 'greedy', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/G'}"}
+{"doc": "{'rating': '', 'name': 'Cutting Game', 'tags': ['binary search', 'brute force', 'data structures', 'implementation', 'sortings', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/F'}"}
+{"doc": "{'rating': '', 'name': 'Money Buys Happiness', 'tags': ['dp'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/E'}"}
+{"doc": "{'rating': '', 'name': 'Ingenuity-2', 'tags': ['constructive algorithms', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/D'}"}
+{"doc": "{'rating': '', 'name': 'Beautiful Triple Pairs', 'tags': ['combinatorics', 'data structures'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/C'}"}
+{"doc": "{'rating': '', 'name': 'Symmetric Encoding', 'tags': ['implementation', 'sortings', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/B'}"}
+{"doc": "{'rating': '', 'name': 'Phone Desktop', 'tags': ['greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/A'}"}
+{"doc": "{'rating': 3100, 'name': 'Maximum GCD Sum Queries', 'tags': ['bitmasks', 'brute force', 'dp', 'implementation', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1973/F'}"}
+{"doc": "{'rating': 2500, 'name': 'Cat, Fox and Swaps ', 'tags': ['graphs', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1973/E'}"}
+{"doc": "{'rating': 2400, 'name': 'Cat, Fox and Maximum Array Split', 'tags': ['brute force', 'interactive', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1973/D'}"}
+{"doc": "{'rating': 1700, 'name': 'Cat, Fox and Double Maximum', 'tags': ['constructive algorithms', 'greedy', 'implementation', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1973/C'}"}
+{"doc": "{'rating': 1300, 'name': 'Cat, Fox and the Lonely Array', 'tags': ['binary search', 'bitmasks', 'data structures', 'greedy', 'math', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1973/B'}"}
+{"doc": "{'rating': 900, 'name': 'Chess For Three', 'tags': ['brute force', 'dp', 'implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1973/A'}"}
 {"doc": "{'rating': 900, 'name': 'Coin Games', 'tags': ['games'], 'problem_url': 'https://codeforces.com/problemset/problem/1972/B'}"}
 {"doc": "{'rating': 800, 'name': 'Contest Proposal', 'tags': ['brute force', 'greedy', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1972/A'}"}
 {"doc": "{'rating': 2100, 'name': '\u00b11', 'tags': ['2-sat', 'dfs and similar', 'graphs'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/H'}"}
 {"doc": "{'rating': 1400, 'name': 'XOUR', 'tags': ['data structures', 'dsu', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/G'}"}
 {"doc": "{'rating': 1600, 'name': 'Circle Perimeter', 'tags': ['binary search', 'brute force', 'dfs and similar', 'geometry', 'implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/F'}"}
 {"doc": "{'rating': 1500, 'name': 'Find the Car', 'tags': ['binary search', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/E'}"}
-{"doc": "{'rating': 1100, 'name': 'Binary Cut', 'tags': ['greedy', 'implementation', 'sortings', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/D'}"}
+{"doc": "{'rating': 1100, 'name': 'Binary Cut', 'tags': ['dp', 'greedy', 'implementation', 'sortings', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/D'}"}
 {"doc": "{'rating': 900, 'name': 'Clock and Strings', 'tags': ['implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/C'}"}
 {"doc": "{'rating': 800, 'name': 'Different String', 'tags': ['implementation', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/B'}"}
 {"doc": "{'rating': 800, 'name': 'My First Sorting Problem', 'tags': ['implementation', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/A'}"}
@@ -485,16 +498,3 @@
 {"doc": "{'rating': 1900, 'name': 'XOR Construction', 'tags': ['bitmasks', 'constructive algorithms', 'data structures', 'math', 'string suffix structures', 'trees'], 'problem_url': 'https://codeforces.com/problemset/problem/1895/D'}"}
 {"doc": "{'rating': 1400, 'name': 'Torn Lucky Ticket', 'tags': ['brute force', 'dp', 'hashing', 'implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1895/C'}"}
 {"doc": "{'rating': 800, 'name': 'Points and Minimum Distance', 'tags': ['greedy', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1895/B'}"}
-{"doc": "{'rating': 800, 'name': 'Treasure Chest', 'tags': ['math'], 'problem_url': 'https://codeforces.com/problemset/problem/1895/A'}"}
-{"doc": "{'rating': 1000, 'name': 'Two Out of Three', 'tags': ['constructive algorithms'], 'problem_url': 'https://codeforces.com/problemset/problem/1894/B'}"}
-{"doc": "{'rating': 800, 'name': 'Secret Sport', 'tags': ['implementation', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1894/A'}"}
-{"doc": "{'rating': 3500, 'name': 'Cacti Symphony', 'tags': ['combinatorics', 'dfs and similar', 'dp', 'graphs'], 'problem_url': 'https://codeforces.com/problemset/problem/1893/E'}"}
-{"doc": "{'rating': 2600, 'name': 'Colorful Constructive', 'tags': ['constructive algorithms', 'data structures', 'greedy'], 'problem_url': 'https://codeforces.com/problemset/problem/1893/D'}"}
-{"doc": "{'rating': 2000, 'name': 'Freedom of Choice', 'tags': ['brute force', 'greedy', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1893/C'}"}
-{"doc": "{'rating': 1700, 'name': 'Neutral Tonality', 'tags': ['constructive algorithms', 'greedy', 'sortings', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1893/B'}"}
-{"doc": "{'rating': 1400, 'name': 'Anonymous Informant', 'tags': ['brute force', 'dfs and similar', 'graphs', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1893/A'}"}
-{"doc": "{'rating': 2000, 'name': 'A Growing Tree', 'tags': ['data structures', 'dfs and similar', 'trees'], 'problem_url': 'https://codeforces.com/problemset/problem/1891/F'}"}
-{"doc": "{'rating': 2500, 'name': 'Brukhovich and Exams', 'tags': ['brute force', 'greedy', 'implementation', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1891/E'}"}
-{"doc": "{'rating': 1900, 'name': 'Suspicious logarithms', 'tags': ['binary search', 'brute force', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1891/D'}"}
-{"doc": "{'rating': 1500, 'name': 'Smilo and Monsters', 'tags': ['binary search', 'constructive algorithms', 'greedy', 'sortings', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1891/C'}"}
-{"doc": "{'rating': 1100, 'name': 'Deja Vu', 'tags': ['brute force', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1891/B'}"}

@@ -15,6 +15,7 @@ def run(host, port):
         port=port,
         schema =QueryInputSchema,
         autocommit_duration_ms=50,
+        delete_completed_queries=False
     )
 
     base_dir = os.path.dirname(os.path.abspath(__file__))

@@ -61,8 +61,16 @@ load_dotenv()
 api_host = os.environ.get("HOST", "0.0.0.0")
 api_port = int(os.environ.get("PORT", 8080))
 
+circular_logo_html_new = f"""
+    <div style="text-align: center;">
+        <img src="https://th.bing.com/th/id/OIG3.4KSN22kFFkbCFQZm_C8y?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Logo" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; display: inline-block;">
+        <br>
+    </div>
+    """
+
 # Streamlit UI elements
-st.title("👨‍💻 AlgoAce - CP Companion")
+st.markdown(circular_logo_html_new, unsafe_allow_html=True)
+st.title("AlgoAce - CP Companion")
 
 cf_handle  = st.text_input(
     "Enter handle",

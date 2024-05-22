@@ -28,7 +28,7 @@ def fetch_problems() :
                 }
                 # print(deal)
 
-                doc_object = {"problems": str(deal)}
+                doc_object = {"doc": str(deal)}
                 file.write(json.dumps(doc_object) + '\n')
         # print(data['result'][0])
 

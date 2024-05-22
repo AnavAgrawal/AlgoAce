@@ -10,8 +10,7 @@ def prompt(index, embedded_query, user_query,language):
         prompt = f'''You are a competitive programming coach. 
         I will give you the user code submissions and a list of all available problems.
         Answer the user query based on the given data.
-        You must start the answer with : "language given by user is {p_lang}."
-        if user asks for any code, it should be in {p_lang}.\n
+        If user asks for any code, it should be in {p_lang}.\n
         Data: \n {docs_str} \nAnswer this query: {query}.'''
 
         return prompt
@@ -20,11 +19,8 @@ def prompt(index, embedded_query, user_query,language):
         embedded_query.vector, k=3, collapse_rows=True
     ).select(local_indexed_data_list=pw.this.doc).promise_universe_is_equal_to(embedded_query)
     
-    # prompt_temp=build_prompt(pw.this.local_indexed_data_list, user_query, language)
-
     prompt = query_context.select(
         prompt=build_prompt(pw.this.local_indexed_data_list, user_query,language)
-        # prompt=build_prompt(pw.this.local_indexed_data_list, user_query)
     )
 
     return prompt.select(

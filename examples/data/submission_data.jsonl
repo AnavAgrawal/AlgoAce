@@ -1,3 +1,20 @@
+{"doc": "{'rating': '', 'verdict': 'OK', 'name': 'Beautiful Triple Pairs', 'tags': ['combinatorics', 'data structures'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/C'}"}
+{"doc": "{'rating': '', 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Beautiful Triple Pairs', 'tags': ['combinatorics', 'data structures'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/C'}"}
+{"doc": "{'rating': '', 'verdict': 'MEMORY_LIMIT_EXCEEDED', 'name': 'Beautiful Triple Pairs', 'tags': ['combinatorics', 'data structures'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/C'}"}
+{"doc": "{'rating': '', 'verdict': 'MEMORY_LIMIT_EXCEEDED', 'name': 'Beautiful Triple Pairs', 'tags': ['combinatorics', 'data structures'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/C'}"}
+{"doc": "{'rating': '', 'verdict': 'WRONG_ANSWER', 'name': 'Beautiful Triple Pairs', 'tags': ['combinatorics', 'data structures'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/C'}"}
+{"doc": "{'rating': '', 'verdict': 'OK', 'name': 'Ingenuity-2', 'tags': ['constructive algorithms', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/D'}"}
+{"doc": "{'rating': '', 'verdict': 'OK', 'name': 'Symmetric Encoding', 'tags': ['implementation', 'sortings', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/B'}"}
+{"doc": "{'rating': '', 'verdict': 'OK', 'name': 'Phone Desktop', 'tags': ['greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1974/A'}"}
+{"doc": "{'rating': 1400, 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'XOUR', 'tags': ['data structures', 'dsu', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/G'}"}
+{"doc": "{'rating': 1400, 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'XOUR', 'tags': ['data structures', 'dsu', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/G'}"}
+{"doc": "{'rating': 1500, 'verdict': 'OK', 'name': 'Find the Car', 'tags': ['binary search', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/E'}"}
+{"doc": "{'rating': 1500, 'verdict': 'WRONG_ANSWER', 'name': 'Find the Car', 'tags': ['binary search', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/E'}"}
+{"doc": "{'rating': 1500, 'verdict': 'WRONG_ANSWER', 'name': 'Find the Car', 'tags': ['binary search', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/E'}"}
+{"doc": "{'rating': 1500, 'verdict': 'WRONG_ANSWER', 'name': 'Find the Car', 'tags': ['binary search', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/E'}"}
+{"doc": "{'rating': 1100, 'verdict': 'OK', 'name': 'Binary Cut', 'tags': ['dp', 'greedy', 'implementation', 'sortings', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/D'}"}
+{"doc": "{'rating': 900, 'verdict': 'OK', 'name': 'Clock and Strings', 'tags': ['implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/C'}"}
+{"doc": "{'rating': 800, 'verdict': 'OK', 'name': 'Different String', 'tags': ['implementation', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1971/B'}"}
 {"doc": "{'rating': 1600, 'verdict': 'OK', 'name': 'Cells Arrangement', 'tags': ['constructive algorithms'], 'problem_url': 'https://codeforces.com/problemset/problem/1968/E'}"}
 {"doc": "{'rating': 1300, 'verdict': 'OK', 'name': 'Permutation Game', 'tags': ['brute force', 'dfs and similar', 'games', 'graphs', 'greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1968/D'}"}
 {"doc": "{'rating': 1000, 'verdict': 'OK', 'name': 'Assembly via Remainders', 'tags': ['constructive algorithms', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1968/C'}"}
@@ -31,20 +48,3 @@
 {"doc": "{'rating': 1300, 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Divisible Pairs', 'tags': ['combinatorics', 'math', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1931/D'}"}
 {"doc": "{'rating': 1000, 'verdict': 'WRONG_ANSWER', 'name': 'Make Equal Again', 'tags': ['brute force', 'greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1931/C'}"}
 {"doc": "{'rating': 1000, 'verdict': 'WRONG_ANSWER', 'name': 'Make Equal Again', 'tags': ['brute force', 'greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1931/C'}"}
-{"doc": "{'rating': 800, 'verdict': 'OK', 'name': 'Make Equal', 'tags': ['greedy'], 'problem_url': 'https://codeforces.com/problemset/problem/1931/B'}"}
-{"doc": "{'rating': 800, 'verdict': 'OK', 'name': 'Recovering a Small String', 'tags': ['brute force', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1931/A'}"}
-{"doc": "{'rating': 1100, 'verdict': 'OK', 'name': 'Haunted House', 'tags': ['binary search', 'greedy', 'math', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1884/B'}"}
-{"doc": "{'rating': 1100, 'verdict': 'OK', 'name': 'Haunted House', 'tags': ['binary search', 'greedy', 'math', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1884/B'}"}
-{"doc": "{'rating': 1200, 'verdict': 'OK', 'name': 'Game with Reversing', 'tags': ['games', 'greedy', 'math', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1834/C'}"}
-{"doc": "{'rating': 1000, 'verdict': 'OK', 'name': 'Maximum Strength', 'tags': ['greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1834/B'}"}
-{"doc": "{'rating': 1000, 'verdict': 'RUNTIME_ERROR', 'name': 'Maximum Strength', 'tags': ['greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1834/B'}"}
-{"doc": "{'rating': 1100, 'verdict': 'OK', 'name': 'Deja Vu', 'tags': ['brute force', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1891/B'}"}
-{"doc": "{'rating': 1200, 'verdict': 'OK', 'name': 'Informatics in MAC', 'tags': ['constructive algorithms'], 'problem_url': 'https://codeforces.com/problemset/problem/1935/B'}"}
-{"doc": "{'rating': 1200, 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Informatics in MAC', 'tags': ['constructive algorithms'], 'problem_url': 'https://codeforces.com/problemset/problem/1935/B'}"}
-{"doc": "{'rating': 1200, 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Informatics in MAC', 'tags': ['constructive algorithms'], 'problem_url': 'https://codeforces.com/problemset/problem/1935/B'}"}
-{"doc": "{'rating': 1200, 'verdict': 'WRONG_ANSWER', 'name': 'Informatics in MAC', 'tags': ['constructive algorithms'], 'problem_url': 'https://codeforces.com/problemset/problem/1935/B'}"}
-{"doc": "{'rating': 1200, 'verdict': 'WRONG_ANSWER', 'name': 'Informatics in MAC', 'tags': ['constructive algorithms'], 'problem_url': 'https://codeforces.com/problemset/problem/1935/B'}"}
-{"doc": "{'rating': 800, 'verdict': 'OK', 'name': 'Entertainment in MAC', 'tags': ['constructive algorithms', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1935/A'}"}
-{"doc": "{'rating': 1200, 'verdict': 'RUNTIME_ERROR', 'name': 'Jellyfish and Game', 'tags': ['brute force', 'greedy', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1875/B'}"}
-{"doc": "{'rating': 1200, 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Equalize', 'tags': ['binary search', 'greedy', 'sortings', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1928/B'}"}
-{"doc": "{'rating': 1200, 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Equalize', 'tags': ['binary search', 'greedy', 'sortings', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1928/B'}"}
