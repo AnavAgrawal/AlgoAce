@@ -51,7 +51,7 @@
 
 AlgoAce is an AI-powered coding assistant built on Pathway's cutting-edge LLMApp architecture, revolutionizing the competitive programming experience by seamlessly integrating with Codeforces, leveraging users' performance data and problem sets to provide personalized guidance through intelligent context understanding, natural language processing, and tailored responses.
 
-<video controls src="assets/DemoVideo.mp4" title="Title"></video>
+https://github.com/AnavAgrawal/AlgoAce/assets/70776064/dd0d8f51-3e6d-45fc-87c6-4903e59dccc4
 
 ### Built With
 
