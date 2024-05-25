@@ -8,8 +8,16 @@ def prompt(index, embedded_query, user_query,language):
     def build_prompt(local_indexed_data, query,p_lang='Python'):
         docs_str = "\n".join(local_indexed_data)
         prompt = f'''You are a competitive programming coach. 
-        I will give you the user code submissions and a list of all available problems.
-        Answer the user query based on the given data.
+        I will give you the user code submissions and a list of all available problems after "Data:".
+        The data lines with verdict are the user code submissions. 
+        The other lines are the available problems on codeforces.
+        Answer the user query after looking at the user code submissions and the questions he got a wrong answer in.
+        The answer should also explain how you arrived at the answer looking at the user code submissions if necessary.
+        Example query : "What problems should I practice next?"
+        Ideal Answer : "Looking at your submissions, you solve questions rated around 1500 and you are facing difficulty in implementing binary search. 
+        So here are some binary search problems you can practice: [Links to Binary search problems]."
+        Example query : "How to implement dynamic programming?"
+        Ideal Answer : "Here's an implementation of dynamic programming. [Dynamic Programming Code].
         If user asks for any code, it should be in {p_lang}.\n
         Data: \n {docs_str} \nAnswer this query: {query}.'''
 

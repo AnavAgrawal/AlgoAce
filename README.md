@@ -8,11 +8,11 @@
   <h3 align="center">AlgoAce - The Competitive Programming Buddy</h3>
 
   <p align="center">
-    An awesome LLM plugin for 
+    An RAG based LLM app to help with your competitive programming queries 
     <br />
-    <a href="https://go.wetransfer.com/t-Ya9A1bGN37">View Demo</a>
+    <a href="#about-the-project">View Demo</a>
     ·
-    <a href="https://github.com/leabuende/mike-llm-slack-plugin/issues">Report Bug</a>
+    <a href="https://github.com/AnavAgrawal/AlgoAce/issues">Report Bug</a>
   </p>
 </div>
 
@@ -49,26 +49,45 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project is a Project management assistant, using Pathways LLM App to assess a Trello board's data in real time to answer questions and assist in task management.
-Look at a few features we have incorporated now : 
-[Mike Slack App Demo](https://youtu.be/Z0ckF6-YRYY)
+AlgoAce is an AI-powered coding assistant built on Pathway's cutting-edge LLMApp architecture, revolutionizing the competitive programming experience by seamlessly integrating with Codeforces, leveraging users' performance data and problem sets to provide personalized guidance through intelligent context understanding, natural language processing, and tailored responses.
 
-<div align="center">
-<img src="demo.gif" width="80%" />
-</div>
-
+<video controls src="assets/DemoVideo.mp4" title="Title"></video>
 
 ### Built With
 
-This project has been built in the context of Pathway's LLM Bootcamp. Big kudo's to them for their amazing course !
-Here are all the tools I used :
+This project was built as a sumbission for the final project in Pathway's 3-Week LLM Building Bootcamp. The tools used for building this app are:
 
-* [Codeforces API](https://api.slack.com/)
-* [Flask](https://flask.palletsprojects.com/en/3.0.x/)
-* [Ngrok](https://ngrok.com/)
 * [Pathway's LLM App](https://pathway.com/developers/showcases/llm-app-pathway)
 
+* [Streamlit](https://streamlit.io/)
 
+* [Codeforces API](https://codeforces.com/api/)
+
+### Architecture
+<img src="assets/ArchitectureLight.png" />
+
+### End-user and Impacted Industry
+**End-User:** Competitive programmers, coding enthusiasts, and students seeking to enhance their problem-solving and coding skills.
+
+**Impacted Industry:** Education and Skill Development.
+
+### Business Impact
+AlgoAce is a valuable tool for the competitive programming community, offering personalized coding assistance and insights:
+
+- **Educational Impact:** AlgoAce democratizes access to personalized coding education, empowering learners to improve their problem-solving abilities and coding proficiency effectively.
+- **Competitive Advantage:** By leveraging a user's Codeforces performance data and recent problem sets, AlgoAce provides tailored guidance, helping participants gain a competitive edge in coding competitions.
+- **Skill Development:** With its interactive coding assistance, AlgoAce supports continuous skill development, equipping users with the necessary tools to excel in their coding endeavors, ultimately contributing to a more skilled and innovative workforce.
+
+### Key Features
+- **Codeforces Integration:** Users can input their Codeforces handle, allowing AlgoAce to retrieve their past submissions and performance data, tailoring the assistance to their specific strengths and areas for improvement.
+- **Personalized Coding Assistance:** AlgoAce leverages the user's Codeforces data and the latest Codeforces problem sets as contextual information to provide personalized guidance, explanations, and code examples, addressing the user's specific coding queries.
+- **Interactive Experience:** With its conversational interface, AlgoAce offers an engaging and interactive coding experience, allowing users to ask follow-up questions and receive real-time feedback.
+
+### Future Enhancements
+- **Expanded Problem Set Integration:** Incorporate additional competitive programming platforms and problem sets to broaden the scope of contextual information available to AlgoAce.
+- **Adaptive Learning:** Implement adaptive learning algorithms to tailor the level of explanations and guidance based on the user's skill level and progression.
+- **Performance Analytics:** Provide users with detailed performance analytics, tracking their progress, identifying areas for improvement, and suggesting personalized learning paths.
+- **Collaborative Learning:** Introduce collaborative features that enable users to share their coding experiences, discuss solutions, and learn from one another, fostering a vibrant coding community.
 <!-- GETTING STARTED -->
 
 ## Installation
@@ -80,7 +99,6 @@ Here are all the tools I used :
 Ensure you have Docker and docker compose both latest version installed on your system before proceeding. Docker compose  will be used to build and run the application in a containerized environment. For installation please refer the offcial documneation of docker [Docker Installation Guide](https://docs.docker.com/compose/install/linux/)
 
 - **OpenAI API Key**:
-    - Create an [OpenAI](https://openai.com/) account and generate a new API Key: 
     - To access the OpenAI API, you will need to create an API Key. You can do this by logging into the [OpenAI] (https://openai.com/product) website and navigating to the API Key management page.
 
 
@@ -189,57 +207,34 @@ Ensure you have Conda installed on your system before proceeding. Conda will be 
     ```bash
     supervisord
     ```
-    - This starts the Backend Server, the Cronjob and the Streamlit UI Interface. 
+    - This starts the Pathway Restful API, the Cronjob and the Streamlit UI Interface. 
 
 8. Navigate to `localhost:8501` to access the Streamlit UI Inteface and use the application.
 
 
 <!-- USAGE -->
-
 ## Usage
 
-- **Select Learning Level:** Users can choose their learning level (Novice, Skilled, Expert) to customize the complexity of the content provided by AURA. This ensures that the learning experience is tailored to the user's current knowledge and skills. We can provide context to.
- - <img src="./assets/demo-2.gif" alt="demo 2" />
+- **Programming Language Preference:** Enhance your learning experience by specifying your preferred programming language. The chatbot will provide code solutions and explanations tailored to your chosen language, facilitating a more effective understanding.
 
- - <img src="./assets/demo-3.gif" alt="demo 3" />
-                
-- **Upload Documents for In-depth Exploration:** Users have the option to upload PDFs or documents to AURA. This enhances its knowledge base, allowing AURA to draw from a broader range of resources when answering queries or providing educational content.
+<!-- - ![demo 2](./assets/demo-2.gif) -->
 
-- **Engage with Queries:** Submit queries to AURA and receive personalized responses. AURA's AI-driven engine analyzes your questions to deliver precise and customized educational content, facilitating a more engaging learning experience.
+- **Enter your Codeforces Handle:** Unlock insights into your competitive programming journey by entering your Codeforces handle. The chatbot will retrieve your past submissions and performance data, allowing it to provide personalized guidance and recommendations based on your historical progress.
 
-- **Two Modes of Interaction:** 
+<!-- - ![demo 3](./assets/demo-3.gif) -->
 
-    - **Basic Mode:** Offers quick answers and summaries for general queries, suitable for users seeking fast insights.
-        
-
-    - **Deep Dive Mode:** Provides detailed explanations and resources, ideal for users looking for an in-depth understanding of a topic.
-- <img src="./assets/demo-4.gif" alt="demo 4" />
-
-- **News API:** AURA calls the news API every 5 minutes of each hour using scheduler to update its knowledge base with the latest information and developments. This ensures that the educational content provided is current and relevant. You can refer to the code for more clarification
-    ```bash
-        ./aura/utils/news_api_connector.py
-    ```
-
-- **Enhancing AURA's Learning in Research:** Users can manually call the arXiv API to provide AURA with the latest research papers and articles. Files uploaded this way are automatically ingested into AURA's data pipeline, enriching its resource pool for advanced topics. Future updates to AURA will include automation of API calls for even greater ease of use. Example usage
-    ```bash
-        python ./utils/arxiv_connector.py  "deep learning"  --max_results 30
-
-
-
+- **Ask your queries:** Engage in a conversational coding experience with our AI-powered chatbot. Ask your coding queries, and the chatbot will analyze your questions, leverage its extensive knowledge base, and provide tailored guidance, explanations, and code examples to help you deepen your understanding of programming concepts and overcome learning challenges.
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+The open source community thrives on the collaborative efforts of its members, and your contributions are **greatly appreciated**. If you have suggestions for improvements, please fork the repository and create a pull request. Don't forget to star the project! Thank you for your support!
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork the repository.
+2. Create a new branch for your feature (`git checkout -b feature/NewFeature`).
+3. Commit your changes (`git commit -m 'Add a new feature'`).
+4. Push to your branch (`git push origin feature/NewFeature`).
+5. Open a pull request.
 
 
 <!-- CONTACT -->

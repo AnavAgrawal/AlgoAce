@@ -110,6 +110,7 @@
 {"doc": "{'rating': 1200, 'name': 'Long Multiplication', 'tags': ['greedy', 'math', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1954/C'}"}
 {"doc": "{'rating': 1200, 'name': 'Make It Ugly', 'tags': ['implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1954/B'}"}
 {"doc": "{'rating': 900, 'name': 'Painting the Ribbon', 'tags': ['constructive algorithms', 'greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1954/A'}"}
+{"doc": "{'rating': '', 'name': 'Accuracy-Preserving Summation Algorithm', 'tags': ['*special'], 'problem_url': 'https://codeforces.com/problemset/problem/1953/A'}"}
 {"doc": "{'rating': '', 'name': 'Help, what does it mean to be \"Based\"', 'tags': ['brute force', 'constructive algorithms', 'expression parsing', 'implementation', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1952/J'}"}
 {"doc": "{'rating': '', 'name': 'Dark Matter', 'tags': ['bitmasks', 'geometry'], 'problem_url': 'https://codeforces.com/problemset/problem/1952/I'}"}
 {"doc": "{'rating': '', 'name': 'Palindrome', 'tags': ['implementation', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1952/H'}"}
@@ -497,4 +498,3 @@
 {"doc": "{'rating': 2300, 'name': 'Infinite Card Game', 'tags': ['binary search', 'brute force', 'data structures', 'dfs and similar', 'dp', 'dsu', 'games', 'graphs', 'greedy', 'sortings', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1895/E'}"}
 {"doc": "{'rating': 1900, 'name': 'XOR Construction', 'tags': ['bitmasks', 'constructive algorithms', 'data structures', 'math', 'string suffix structures', 'trees'], 'problem_url': 'https://codeforces.com/problemset/problem/1895/D'}"}
 {"doc": "{'rating': 1400, 'name': 'Torn Lucky Ticket', 'tags': ['brute force', 'dp', 'hashing', 'implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1895/C'}"}
-{"doc": "{'rating': 800, 'name': 'Points and Minimum Distance', 'tags': ['greedy', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1895/B'}"}
