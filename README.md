@@ -138,7 +138,7 @@ Ensure you have Docker and docker compose both latest version installed on your 
     PORT=8080
     EMBEDDER_LOCATOR=text-embedding-ada-002
     EMBEDDING_DIMENSION=1536
-    MODEL_LOCATOR=gpt-3.5-turbo
+    MODEL_LOCATOR=gpt-4o
     MAX_TOKENS=400
     TEMPERATURE=0.2
    ```
@@ -208,7 +208,7 @@ Ensure you have Conda installed on your system before proceeding. Conda will be 
     PORT=8080
     EMBEDDER_LOCATOR=text-embedding-ada-002
     EMBEDDING_DIMENSION=1536
-    MODEL_LOCATOR=gpt-3.5-turbo
+    MODEL_LOCATOR=gpt-4o
     MAX_TOKENS=400
     TEMPERATURE=0.2
    ```
