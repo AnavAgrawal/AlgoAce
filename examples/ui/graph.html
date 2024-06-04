@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Resources</title>
+  <style>
+    .node {
+    cursor: pointer;
+}
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+.node text {
+    font: 10px sans-serif;
+}
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
+
+body {
+    overflow: hidden;
+}
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<div id="body"></div>
+<!-- partial -->
+  <!-- <script  src="./new.js"></script> -->
+<script>
+    var margin = {
+    top: 20,
+    right: 120,
+    bottom: 20,
+    left: 120
+},
+width = 960 - margin.right - margin.left,
+height = 800 - margin.top - margin.bottom;
+
+var root = {
+    "name": "Arrays & Hashing",
+    "url": "https://youtube.com/playlist?list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB&si=5bvc1ldCev9ufYbt",
+    "children": [
+        {
+            "name": "Two Pointers",
+            "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0q7vrFA_HEWcqRqMpCXzYAL",
+            "children": [
+                {
+                    "name": "Binary Search",
+                    "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0pMFMWuuvDNMAkoQFi-h0ZF"
+                },
+                {
+                    "name": "Sliding Window",
+                    "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0q7vrFA_HEWcqRqMpCXzYAL"
+                },
+                {
+                    "name": "Linked List",
+                    "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0rAuz8tVcM0AymmhTRsfaLU",
+                    "children": [
+                        {
+                            "name": "Trees",
+                            "url" : "https://youtube.com/playlist?list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&si=d41i5xkMdaUV2TZQ",
+                            "children": [
+                                {
+                                    "name": "Tries",
+                                    "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp"
+                                },
+                                {
+                                    "name": "Backtracking",
+                                    "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9",
+                                    "children": [
+                                        {
+                                            "name": "Graphs",
+                                            "url" : "https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&si=bSAfbE1JEudG92Ll",
+                                            "children": [
+                                                {
+                                                    "name": "Advanced Graphs",
+                                                    "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "1-D DP",
+                                            "url": "https://youtube.com/playlist?list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&si=8tTopWzMZ4j5haIi",
+                                            "children": [
+                                                {
+                                                    "name": "2-D DP",
+                                                    "url": "https://youtu.be/AE39gJYuRog?si=U6nI0H6bcxTPKFsZ"
+                                                },
+                                                {
+                                                    "name": "Bit Manipulation",
+                                                    "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0rnqh8QsJaHyIX7KUiaPUv7"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Heap / Priority Queue",
+                                    "url" : "https://youtube.com/playlist?list=PLzjZaW71kMwTF8ZcUwm9md_3MvtOfwGow&si=whgPLH3g0CgllF-9"
+                                }
+                            ]
+                        }
+
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Stack",
+            "url": "https://www.youtube.com/playlist?list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj"
+        }
+    ]
+};
+
+var i = 0,
+    duration = 750,
+    rectW = 120,
+    rectH = 40;
+
+var tree = d3.layout.tree().nodeSize([rectW+10, rectH+10]);
+var diagonal = d3.svg.diagonal()
+    .projection(function (d) {
+    return [d.x + rectW / 2, d.y + rectH / 2];
+});
+
+var svg = d3.select("#body").append("svg").attr("width", 1080).attr("height", 1000)
+    .call(zm = d3.behavior.zoom().scaleExtent([0.7,3]).on("zoom", redraw)).append("g")
+    .attr("transform", "translate(" + 450 + "," + 50 + ")");
+
+//necessary so that zoom knows where to zoom and unzoom from
+zm.translate([350, 20]);
+
+root.x0 = 0;
+root.y0 = height / 2;
+
+function collapse(d) {
+    if (d.children) {
+        d._children = d.children;
+        d._children.forEach(collapse);
+        d.children = null;
+    }
+}
+
+root.children.forEach(collapse);
+update(root);
+
+d3.select("#body").style("height", "800px");
+
+function update(source) {
+
+    // Compute the new tree layout.
+    var nodes = tree.nodes(root).reverse(),
+        links = tree.links(nodes);
+
+    // Normalize for fixed-depth.
+    nodes.forEach(function (d) {
+        d.y = d.depth * 180;
+    });
+
+    // Update the nodes…
+    var node = svg.selectAll("g.node")
+        .data(nodes, function (d) {
+        return d.id || (d.id = ++i);
+    });
+
+    // Enter any new nodes at the parent's previous position.
+    var nodeEnter = node.enter().append("g")
+        .attr("class", "node")
+        .attr("transform", function (d) {
+        return "translate(" + source.x0 + "," + source.y0 + ")";
+    })
+        .on("click", function(d) { click(d)
+        // if (d3.event.shiftKey) {
+        //     // Open the external link
+        //     if (d.url) {
+        //         window.open(d.url, "_blank");
+        //         }
+        // } else {
+        //     click(d); // Call the existing click function
+        // }
+    })
+        .on("contextmenu", function(d) {
+            d3.event.preventDefault(); // Prevent the default context menu from appearing
+            
+            // Open the external link in a new tab and focus it
+            if (d.url) {
+                window.open(d.url, "_blank", "noopener,noreferrer");}
+        } )
+    ;
+
+    nodeEnter.append("rect")
+        .attr("width", rectW)
+        .attr("height", rectH)
+        .attr("stroke", "black")
+        .attr("stroke-width", 1)
+        .style("fill", function (d) {
+        return d._children ? "lightsteelblue" : "#fff";
+    });
+
+    nodeEnter.append("text")
+        .attr("x", rectW / 2)
+        .attr("y", rectH / 2)
+        .attr("dy", ".35em")
+        .attr("text-anchor", "middle")
+        .text(function (d) {
+        return d.name;
+    });
+
+    // Transition nodes to their new position.
+    var nodeUpdate = node.transition()
+        .duration(duration)
+        .attr("transform", function (d) {
+        return "translate(" + d.x + "," + d.y + ")";
+    });
+
+    nodeUpdate.select("rect")
+        .attr("width", rectW)
+        .attr("height", rectH)
+        .attr("stroke", "black")
+        .attr("stroke-width", 1)
+        .style("fill", function (d) {
+        return d._children ? "lightsteelblue" : "#fff";
+    });
+
+    nodeUpdate.select("text")
+        .style("fill-opacity", 1);
+
+    // Transition exiting nodes to the parent's new position.
+    var nodeExit = node.exit().transition()
+        .duration(duration)
+        .attr("transform", function (d) {
+        return "translate(" + source.x + "," + source.y + ")";
+    })
+        .remove();
+
+    nodeExit.select("rect")
+        .attr("width", rectW)
+        .attr("height", rectH)
+    //.attr("width", bbox.getBBox().width)""
+    //.attr("height", bbox.getBBox().height)
+    .attr("stroke", "black")
+        .attr("stroke-width", 1);
+
+    nodeExit.select("text");
+
+    // Update the links…
+    var link = svg.selectAll("path.link")
+        .data(links, function (d) {
+        return d.target.id;
+    });
+
+    // Enter any new links at the parent's previous position.
+    link.enter().insert("path", "g")
+        .attr("class", "link")
+        .attr("x", rectW / 2)
+        .attr("y", rectH / 2)
+        .attr("d", function (d) {
+        var o = {
+            x: source.x0,
+            y: source.y0
+        };
+        return diagonal({
+            source: o,
+            target: o
+        });
+    });
+
+    // Transition links to their new position.
+    link.transition()
+        .duration(duration)
+        .attr("d", diagonal);
+
+    // Transition exiting nodes to the parent's new position.
+    link.exit().transition()
+        .duration(duration)
+        .attr("d", function (d) {
+        var o = {
+            x: source.x,
+            y: source.y
+        };
+        return diagonal({
+            source: o,
+            target: o
+        });
+    })
+        .remove();
+
+    // Stash the old positions for transition.
+    nodes.forEach(function (d) {
+        d.x0 = d.x;
+        d.y0 = d.y;
+    });
+}
+
+// Toggle children on click.
+function click(d) {
+    if (d.children) {
+        d._children = d.children;
+        d.children = null;
+    } else {
+        d.children = d._children;
+        d._children = null;
+    }
+    update(d);
+}
+
+//Redraw for zoom
+function redraw() {
+  //console.log("here", d3.event.translate, d3.event.scale);
+  svg.attr("transform",
+      "translate(" + d3.event.translate + ")"
+      + " scale(" + d3.event.scale + ")");
+}
+
+function wrap(text, width) {
+  text.each(function() {
+    var text = d3.select(this),
+        words = text.text().split(/\s+/).reverse(),
+        word,
+        line = [],
+        lineNumber = 0,
+        lineHeight = 1.1, // ems
+        y = text.attr("y"),
+        dy = parseFloat(text.attr("dy")),
+        tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+    while (word = words.pop()) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {
+        line.pop();
+        tspan.text(line.join(" "));
+        line = [word];
+        tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+      }
+    }
+  });
+}
+
+</script>
+</body>
+</html>

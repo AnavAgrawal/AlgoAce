@@ -12,7 +12,7 @@ def get_url(cf_handle):
     params = {
     "handle": cf_handle,
     "from": "1",
-    "count": "50"
+    "count": "100"
     }
 
     encoded_parameters = urlencode(params)

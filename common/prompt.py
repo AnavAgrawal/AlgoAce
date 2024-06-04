@@ -12,6 +12,7 @@ def prompt(index, embedded_query, user_query,language):
         The data lines with verdict are the user code submissions. 
         The other lines are the available problems on codeforces.
         Answer the user query after looking at the user code submissions and the questions he got a wrong answer in.
+        The problems you analyze and suggest should be similar in rating to the highest rated problems that the user has attempted.
         The answer should also explain how you arrived at the answer looking at the user code submissions if necessary.
         Example query : "What problems should I practice next?"
         Ideal Answer : "Looking at your submissions, you solve questions rated around 1500 and you are facing difficulty in implementing binary search. 
@@ -24,7 +25,7 @@ def prompt(index, embedded_query, user_query,language):
         return prompt
 
     query_context = embedded_query + index.get_nearest_items(
-        embedded_query.vector, k=3, collapse_rows=True
+        embedded_query.vector, k=5, collapse_rows=True
     ).select(local_indexed_data_list=pw.this.doc).promise_universe_is_equal_to(embedded_query)
     
     prompt = query_context.select(
