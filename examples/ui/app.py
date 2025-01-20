@@ -1,29 +1,32 @@
+import streamlit as st
 import os
 import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '')))
+import base64
+sys.path.append(os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..', '')))
 sys.path.append(os.path.dirname(__file__))
-import streamlit as st
 
-def question_page() :
+
+def question_page():
     from dotenv import load_dotenv
     import requests
-    from cf_api import get_data 
+    from cf_api import get_data
 
     # import cf_data as cf
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    submissions_path = os.path.join(base_dir, '..', 'data', 'submission_data.jsonl')
+    submissions_path = os.path.join(
+        base_dir, '..', 'data', 'submission_data.jsonl')
     problems_path = os.path.join(base_dir, '..', 'data', 'problems_data.jsonl')
     # logo_path = os.path.join(base_dir, 'Logo.jpeg')
 
     with st.sidebar:
 
         programming_language = st.text_input(
-        "Enter preferred programming language (Optional):",
-        placeholder="Python/C++/Java etc.",
-        help="Any code output will be in this langauge."
+            "Enter preferred programming language (Optional):",
+            placeholder="Python/C++/Java etc.",
+            help="Any code output will be in this langauge."
         )
-
 
         st.markdown(
             "## How to use\n"
@@ -40,18 +43,22 @@ def question_page() :
             "to build real-time LLM(Large Language Model)-enabled data pipeline in Python and join data from multiple input sources\n"
 
         )
-        st.markdown("[View the source code on GitHub](https://github.com/AnavAgrawal/AlgoAce)")
-
-
+        st.markdown(
+            "[View the source code on GitHub](https://github.com/AnavAgrawal/AlgoAce)")
 
     # Load environment variables
     load_dotenv()
     api_host = os.environ.get("HOST", "0.0.0.0")
     api_port = int(os.environ.get("PORT", 8080))
 
+    file_ = open(r"assets\AlgoAce_Logo.jpeg", "rb")
+    contents = file_.read()
+    data_url = base64.b64encode(contents).decode("utf-8")
+    file_.close()
+
     circular_logo_html_new = f"""
         <div style="text-align: center;">
-            <img src="https://th.bing.com/th/id/OIG3.4KSN22kFFkbCFQZm_C8y?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Logo" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; display: inline-block;">
+            <img src="data:image/gif;base64,{data_url}" alt="Logo" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; display: inline-block;">
             <br>
         </div>
         """
@@ -61,7 +68,7 @@ def question_page() :
     st.markdown(circular_logo_html_new, unsafe_allow_html=True)
     st.title("AlgoAce - CP Companion")
 
-    cf_handle  = st.text_input(
+    cf_handle = st.text_input(
         "Enter handle",
         placeholder="codeforces_handle",
     )
@@ -81,7 +88,7 @@ def question_page() :
 
         url = f'http://{api_host}:{api_port}/'
         data = {"query": question,
-                "language" : programming_language}
+                "language": programming_language}
 
         response = requests.post(url, json=data)
 
@@ -89,13 +96,15 @@ def question_page() :
             st.write("### Answer")
             st.write(response.json())
         else:
-            st.error(f"Failed to send data to Codeforces API. Status code: {response.status_code}")
+            st.error(f"Failed to send data to Codeforces API. Status code: {
+                     response.status_code}")
 
 
 def graph_page():
     import os
     import sys
-    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '')))
+    sys.path.append(os.path.abspath(
+        os.path.join(os.path.dirname(__file__), '..', '')))
     sys.path.append(os.path.dirname(__file__))
     import streamlit as st
     import streamlit.components.v1 as components
@@ -119,16 +128,17 @@ def graph_page():
             "to build real-time LLM(Large Language Model)-enabled data pipeline in Python and join data from multiple input sources\n"
 
         )
-        st.markdown("[View the source code on GitHub](https://github.com/AnavAgrawal/AlgoAce)")
-
+        st.markdown(
+            "[View the source code on GitHub](https://github.com/AnavAgrawal/AlgoAce)")
 
     # Streamlit UI elements
 
     HtmlFile = open("examples/ui/graph.html", 'r', encoding='utf-8')
-    source_code = HtmlFile.read() 
-    components.html(source_code, height = 1000,width=1100)
+    source_code = HtmlFile.read()
+    components.html(source_code, height=1000, width=1100)
 
-    st.markdown(" <style> .st-emotion-cache-13ln4jf { max-width: 2000rem; padding : 1rem 1rem 10rem} </style> ", unsafe_allow_html=True)
+    st.markdown(
+        " <style> .st-emotion-cache-13ln4jf { max-width: 2000rem; padding : 1rem 1rem 10rem} </style> ", unsafe_allow_html=True)
 
 
 page_names_to_funcs = {
@@ -136,15 +146,21 @@ page_names_to_funcs = {
     "Get Resources": graph_page
 }
 
-demo_name = st.sidebar.selectbox("Select a mode", page_names_to_funcs.keys(),label_visibility="visible")
+demo_name = st.sidebar.selectbox(
+    "Select a mode", page_names_to_funcs.keys(), label_visibility="visible")
 
 with st.sidebar:
+
+    file_ = open(r"assets\AlgoAce_Logo.jpeg", "rb")
+    contents = file_.read()
+    data_url = base64.b64encode(contents).decode("utf-8")
+    file_.close()
 
     # HTML and CSS to make the image circular and center-align it along with the text
     circular_logo_html = f"""
     <div style="text-align: center;">
         <br>
-        <img src="https://th.bing.com/th/id/OIG3.4KSN22kFFkbCFQZm_C8y?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Logo" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; display: inline-block;">
+        <img src="data:image/gif;base64,{data_url}" alt="Logo" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; display: inline-block;">
         <br>
         <h1 style="margin-top: 10px;">Algo  Ace</h1>
         <br>
