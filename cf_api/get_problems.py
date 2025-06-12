@@ -6,7 +6,7 @@ import json
 import time
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(base_dir, '..', 'data', 'problems_data.jsonl')
+file_path = os.path.join(base_dir, '..', 'data_2', 'problems_data.jsonl')
 
 def fetch_problems() :
     
@@ -28,7 +28,7 @@ def fetch_problems() :
                 }
                 # print(deal)
 
-                doc_object = {"doc": str(deal)}
+                doc_object = {"data": str(deal)}
                 file.write(json.dumps(doc_object) + '\n')
         # print(data['result'][0])
 

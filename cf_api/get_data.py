@@ -12,7 +12,7 @@ def get_url(cf_handle):
     params = {
     "handle": cf_handle,
     "from": "1",
-    "count": "100"
+    "count": "300"
     }
 
     encoded_parameters = urlencode(params)
@@ -42,7 +42,7 @@ def send_request(cf_handle):
                     'problem_url': f"https://codeforces.com/problemset/problem/{problem.get('contestId', '')}/{problem.get('index', '')}",
                 }
 
-                doc_object = {"doc": str(deal)}
+                doc_object = {"data": str(deal)}
                 file.write(json.dumps(doc_object) + '\n')
 
         # print(data['result'][0])
@@ -53,4 +53,10 @@ def send_request(cf_handle):
     else:
         print(f"Failed to fetch data. Status code: {response.status_code}")
 
-# send_request("Anav_Agrawal")
+if __name__ == "__main__":
+    # cf_handle = os.getenv("CODEFORCES_HANDLE")
+    # if not cf_handle:
+    #     raise ValueError("Please set the CODEFORCES_HANDLE environment variable.")
+    
+    # send_request(cf_handle)
+    send_request("Anav_Agrawal")
