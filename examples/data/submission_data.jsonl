@@ -1,0 +1,100 @@
+{"doc": "{'rating': 2600, 'verdict': 'OK', 'name': 'Tensor', 'tags': ['constructive algorithms', 'graphs', 'interactive'], 'problem_url': 'https://codeforces.com/problemset/problem/1977/E'}"}
+{"doc": "{'rating': 2600, 'verdict': 'WRONG_ANSWER', 'name': 'Tensor', 'tags': ['constructive algorithms', 'graphs', 'interactive'], 'problem_url': 'https://codeforces.com/problemset/problem/1977/E'}"}
+{"doc": "{'rating': 2300, 'verdict': 'OK', 'name': 'XORificator', 'tags': ['bitmasks', 'brute force', 'greedy', 'hashing'], 'problem_url': 'https://codeforces.com/problemset/problem/1977/D'}"}
+{"doc": "{'rating': 1900, 'verdict': 'OK', 'name': 'Nikita and LCM', 'tags': ['brute force', 'data structures', 'dp', 'greedy', 'math', 'number theory', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1977/C'}"}
+{"doc": "{'rating': 1100, 'verdict': 'OK', 'name': 'Binary Colouring', 'tags': ['bitmasks', 'constructive algorithms', 'greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1977/B'}"}
+{"doc": "{'rating': 800, 'verdict': 'OK', 'name': 'Little Nikita', 'tags': ['math'], 'problem_url': 'https://codeforces.com/problemset/problem/1977/A'}"}
+{"doc": "{'rating': 3500, 'verdict': 'OK', 'name': '378QAQ and Core', 'tags': ['greedy', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1975/H'}"}
+{"doc": "{'rating': 3500, 'verdict': 'MEMORY_LIMIT_EXCEEDED', 'name': '378QAQ and Core', 'tags': ['greedy', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1975/H'}"}
+{"doc": "{'rating': 3000, 'verdict': 'OK', 'name': 'Zimpha Fan Club', 'tags': ['fft', 'greedy', 'math', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1975/G'}"}
+{"doc": "{'rating': 3500, 'verdict': 'OK', 'name': '378QAQ and Core', 'tags': ['greedy', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1975/H'}"}
+{"doc": "{'rating': 3500, 'verdict': 'WRONG_ANSWER', 'name': '378QAQ and Core', 'tags': ['greedy', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1975/H'}"}
+{"doc": "{'rating': 3000, 'verdict': 'OK', 'name': 'Zimpha Fan Club', 'tags': ['fft', 'greedy', 'math', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1975/G'}"}
+{"doc": "{'rating': 2100, 'verdict': 'OK', 'name': 'Chain Queries', 'tags': ['binary search', 'data structures', 'dfs and similar', 'implementation', 'trees'], 'problem_url': 'https://codeforces.com/problemset/problem/1975/E'}"}
+{"doc": "{'rating': 2600, 'verdict': 'OK', 'name': 'Set', 'tags': ['bitmasks', 'brute force', 'combinatorics', 'dfs and similar', 'divide and conquer', 'dp', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1975/F'}"}
+{"doc": "{'rating': 1700, 'verdict': 'OK', 'name': 'Paint the Tree', 'tags': ['brute force', 'dfs and similar', 'dp', 'greedy', 'shortest paths', 'trees'], 'problem_url': 'https://codeforces.com/problemset/problem/1975/D'}"}
+{"doc": "{'rating': 800, 'verdict': 'OK', 'name': \"Bazoka and Mocha's Array\", 'tags': ['brute force', 'greedy', 'implementation', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1975/A'}"}
+{"doc": "{'rating': 1200, 'verdict': 'OK', 'name': \"Chamo and Mocha's Array\", 'tags': ['binary search', 'brute force', 'greedy'], 'problem_url': 'https://codeforces.com/problemset/problem/1975/C'}"}
+{"doc": "{'rating': 1000, 'verdict': 'OK', 'name': \"378QAQ and Mocha's Array\", 'tags': ['brute force', 'greedy', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1975/B'}"}
+{"doc": "{'rating': 3200, 'verdict': 'OK', 'name': 'Necromancer', 'tags': ['*special'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/J'}"}
+{"doc": "{'rating': 3100, 'verdict': 'OK', 'name': 'Equal Trees', 'tags': ['*special', 'graphs', 'meet-in-the-middle'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/I'}"}
+{"doc": "{'rating': 2600, 'verdict': 'OK', 'name': 'Composite Spells', 'tags': ['*special', 'dp'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/H'}"}
+{"doc": "{'rating': 2400, 'verdict': 'OK', 'name': 'Observation Towers', 'tags': ['*special'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/G'}"}
+{"doc": "{'rating': 2000, 'verdict': 'OK', 'name': 'Narrow Paths', 'tags': ['*special', 'combinatorics'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/F'}"}
+{"doc": "{'rating': 2000, 'verdict': 'WRONG_ANSWER', 'name': 'Narrow Paths', 'tags': ['*special', 'combinatorics'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/F'}"}
+{"doc": "{'rating': 1900, 'verdict': 'OK', 'name': 'Yet Another Permutation Constructive', 'tags': ['*special', 'constructive algorithms'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/E'}"}
+{"doc": "{'rating': 1900, 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Yet Another Permutation Constructive', 'tags': ['*special', 'constructive algorithms'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/E'}"}
+{"doc": "{'rating': 1600, 'verdict': 'OK', 'name': 'Staircase', 'tags': ['*special'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/D'}"}
+{"doc": "{'rating': 1500, 'verdict': 'OK', 'name': 'Firewood', 'tags': ['*special'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/C'}"}
+{"doc": "{'rating': 1400, 'verdict': 'OK', 'name': 'Clock in the Pool', 'tags': ['*special', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/B'}"}
+{"doc": "{'rating': 1100, 'verdict': 'OK', 'name': '1-3-5', 'tags': ['*special', 'dp'], 'problem_url': 'https://codeforces.com/problemset/problem/1958/A'}"}
+{"doc": "{'rating': '', 'verdict': 'OK', 'name': 'Count the Trains', 'tags': ['*special', 'data structures'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/H'}"}
+{"doc": "{'rating': '', 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Count the Trains', 'tags': ['*special', 'data structures'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/H'}"}
+{"doc": "{'rating': '', 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Count the Trains', 'tags': ['*special', 'data structures'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/H'}"}
+{"doc": "{'rating': '', 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Count the Trains', 'tags': ['*special', 'data structures'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/H'}"}
+{"doc": "{'rating': '', 'verdict': 'OK', 'name': 'The Humanoid', 'tags': ['*special', 'brute force', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/G'}"}
+{"doc": "{'rating': '', 'verdict': 'OK', 'name': 'Sending a Sequence Over the Network', 'tags': ['*special', 'dp'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/F'}"}
+{"doc": "{'rating': '', 'verdict': 'OK', 'name': 'Jumping on Tiles', 'tags': ['*special', 'constructive algorithms', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/E'}"}
+{"doc": "{'rating': '', 'verdict': 'OK', 'name': 'Traffic Light', 'tags': ['*special'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/D'}"}
+{"doc": "{'rating': '', 'verdict': 'OK', 'name': 'Count the Number of Pairs', 'tags': ['*special', 'greedy', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/C'}"}
+{"doc": "{'rating': '', 'verdict': 'OK', 'name': 'Compare T-Shirt Sizes', 'tags': ['*special', 'implementation', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/B'}"}
+{"doc": "{'rating': '', 'verdict': 'OK', 'name': 'Spy Detected!', 'tags': ['*special', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1959/A'}"}
+{"doc": "{'rating': 3500, 'verdict': 'OK', 'name': 'Again Counting Arrays (Hard Version)', 'tags': ['combinatorics', 'dp', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1967/E2'}"}
+{"doc": "{'rating': 3100, 'verdict': 'OK', 'name': 'Again Counting Arrays (Easy Version)', 'tags': ['combinatorics', 'dp', 'fft', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1967/E1'}"}
+{"doc": "{'rating': 2800, 'verdict': 'OK', 'name': 'Long Way to be Non-decreasing', 'tags': ['binary search', 'dfs and similar', 'graphs', 'implementation', 'shortest paths', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1967/D'}"}
+{"doc": "{'rating': 2300, 'verdict': 'OK', 'name': 'Fenwick Tree', 'tags': ['bitmasks', 'brute force', 'combinatorics', 'data structures', 'dp', 'math', 'trees'], 'problem_url': 'https://codeforces.com/problemset/problem/1967/C'}"}
+{"doc": "{'rating': 2200, 'verdict': 'OK', 'name': 'Reverse Card (Hard Version)', 'tags': ['brute force', 'math', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1967/B2'}"}
+{"doc": "{'rating': 1400, 'verdict': 'OK', 'name': 'Reverse Card (Easy Version)', 'tags': ['brute force', 'math', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1967/B1'}"}
+{"doc": "{'rating': 1400, 'verdict': 'OK', 'name': 'Permutation Counting', 'tags': ['binary search', 'greedy', 'implementation', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1967/A'}"}
+{"doc": "{'rating': 3000, 'verdict': 'OK', 'name': 'Card Pairing', 'tags': ['dp', 'greedy', 'hashing', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1969/F'}"}
+{"doc": "{'rating': 3000, 'verdict': 'WRONG_ANSWER', 'name': 'Card Pairing', 'tags': ['dp', 'greedy', 'hashing', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1969/F'}"}
+{"doc": "{'rating': 2400, 'verdict': 'OK', 'name': 'Unique Array', 'tags': ['binary search', 'data structures', 'divide and conquer', 'dp', 'greedy'], 'problem_url': 'https://codeforces.com/problemset/problem/1969/E'}"}
+{"doc": "{'rating': 1700, 'verdict': 'OK', 'name': 'Minimizing the Sum', 'tags': ['dp', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1969/C'}"}
+{"doc": "{'rating': 1700, 'verdict': 'RUNTIME_ERROR', 'name': 'Minimizing the Sum', 'tags': ['dp', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1969/C'}"}
+{"doc": "{'rating': 1900, 'verdict': 'OK', 'name': 'Shop Game', 'tags': ['data structures', 'greedy', 'math', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1969/D'}"}
+{"doc": "{'rating': 1700, 'verdict': 'SKIPPED', 'name': 'Minimizing the Sum', 'tags': ['dp', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1969/C'}"}
+{"doc": "{'rating': 1000, 'verdict': 'OK', 'name': 'Shifts and Sorting', 'tags': ['constructive algorithms', 'greedy'], 'problem_url': 'https://codeforces.com/problemset/problem/1969/B'}"}
+{"doc": "{'rating': 800, 'verdict': 'OK', 'name': 'Two Friends', 'tags': ['constructive algorithms', 'implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1969/A'}"}
+{"doc": "{'rating': 1400, 'verdict': 'OK', 'name': 'Inaccurate Subsequence Search', 'tags': ['data structures', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1955/D'}"}
+{"doc": "{'rating': 1800, 'verdict': 'OK', 'name': 'Unfair Game', 'tags': ['dp', 'games', 'greedy', 'math', 'schedules'], 'problem_url': 'https://codeforces.com/problemset/problem/1955/F'}"}
+{"doc": "{'rating': 2300, 'verdict': 'OK', 'name': 'The Most Reckless Defense', 'tags': ['bitmasks', 'brute force', 'constructive algorithms', 'dp', 'flows', 'graph matchings', 'shortest paths'], 'problem_url': 'https://codeforces.com/problemset/problem/1955/H'}"}
+{"doc": "{'rating': 1900, 'verdict': 'OK', 'name': 'GCD on a grid', 'tags': ['brute force', 'dfs and similar', 'dp', 'implementation', 'math', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1955/G'}"}
+{"doc": "{'rating': 1800, 'verdict': 'OK', 'name': 'Unfair Game', 'tags': ['dp', 'games', 'greedy', 'math', 'schedules'], 'problem_url': 'https://codeforces.com/problemset/problem/1955/F'}"}
+{"doc": "{'rating': 1700, 'verdict': 'OK', 'name': 'Long Inversions', 'tags': ['brute force', 'greedy', 'implementation', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1955/E'}"}
+{"doc": "{'rating': 1300, 'verdict': 'OK', 'name': 'Inhabitant of the Deep Sea', 'tags': ['greedy', 'implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1955/C'}"}
+{"doc": "{'rating': 1400, 'verdict': 'OK', 'name': 'Inaccurate Subsequence Search', 'tags': ['data structures', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1955/D'}"}
+{"doc": "{'rating': 1300, 'verdict': 'WRONG_ANSWER', 'name': 'Inhabitant of the Deep Sea', 'tags': ['greedy', 'implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1955/C'}"}
+{"doc": "{'rating': 1000, 'verdict': 'OK', 'name': 'Progressive Square', 'tags': ['constructive algorithms', 'data structures', 'implementation', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1955/B'}"}
+{"doc": "{'rating': 800, 'verdict': 'OK', 'name': 'Yogurt Sale', 'tags': ['math'], 'problem_url': 'https://codeforces.com/problemset/problem/1955/A'}"}
+{"doc": "{'rating': '', 'verdict': 'WRONG_ANSWER', 'name': 'Are You a Robot, Again?', 'tags': ['strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1952/A'}"}
+{"doc": "{'rating': '', 'verdict': 'WRONG_ANSWER', 'name': 'Are You a Robot, Again?', 'tags': ['strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1952/A'}"}
+{"doc": "{'rating': '', 'verdict': 'WRONG_ANSWER', 'name': 'Are You a Robot, Again?', 'tags': ['strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1952/A'}"}
+{"doc": "{'rating': 2700, 'verdict': 'OK', 'name': \"Farmer John's Favorite Function\", 'tags': ['brute force', 'data structures', 'implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1942/F'}"}
+{"doc": "{'rating': 2800, 'verdict': 'OK', 'name': 'Bessie and Cards', 'tags': ['combinatorics', 'dp', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1942/G'}"}
+{"doc": "{'rating': 2100, 'verdict': 'OK', 'name': 'Learning to Paint', 'tags': ['binary search', 'data structures', 'dfs and similar', 'dp', 'greedy', 'implementation', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/1942/D'}"}
+{"doc": "{'rating': 2300, 'verdict': 'OK', 'name': 'Farm Game', 'tags': ['combinatorics', 'games'], 'problem_url': 'https://codeforces.com/problemset/problem/1942/E'}"}
+{"doc": "{'rating': 1700, 'verdict': 'OK', 'name': \"Bessie's Birthday Cake (Hard Version)\", 'tags': ['geometry', 'greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1942/C2'}"}
+{"doc": "{'rating': 1300, 'verdict': 'OK', 'name': \"Bessie's Birthday Cake (Easy Version)\", 'tags': ['geometry', 'greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1942/C1'}"}
+{"doc": "{'rating': 1100, 'verdict': 'OK', 'name': 'Bessie and MEX', 'tags': ['constructive algorithms', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1942/B'}"}
+{"doc": "{'rating': 800, 'verdict': 'OK', 'name': \"Farmer John's Challenge\", 'tags': ['constructive algorithms', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1942/A'}"}
+{"doc": "{'rating': 1900, 'verdict': 'OK', 'name': 'Shuffling Songs', 'tags': ['bitmasks', 'dfs and similar', 'dp', 'graphs', 'hashing', 'implementation', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1950/G'}"}
+{"doc": "{'rating': 1900, 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Shuffling Songs', 'tags': ['bitmasks', 'dfs and similar', 'dp', 'graphs', 'hashing', 'implementation', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1950/G'}"}
+{"doc": "{'rating': 1700, 'verdict': 'OK', 'name': '0, 1, 2, Tree!', 'tags': ['bitmasks', 'brute force', 'greedy', 'implementation', 'trees'], 'problem_url': 'https://codeforces.com/problemset/problem/1950/F'}"}
+{"doc": "{'rating': 1500, 'verdict': 'OK', 'name': 'Nearly Shortest Repeating Substring', 'tags': ['brute force', 'implementation', 'number theory', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/1950/E'}"}
+{"doc": "{'rating': 1100, 'verdict': 'OK', 'name': 'Product of Binary Decimals', 'tags': ['brute force', 'dp', 'implementation', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1950/D'}"}
+{"doc": "{'rating': 800, 'verdict': 'OK', 'name': 'Clock Conversion', 'tags': ['implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1950/C'}"}
+{"doc": "{'rating': 800, 'verdict': 'OK', 'name': 'Upscaling', 'tags': ['implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1950/B'}"}
+{"doc": "{'rating': 800, 'verdict': 'OK', 'name': 'Stair, Peak, or Neither?', 'tags': ['implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1950/A'}"}
+{"doc": "{'rating': 800, 'verdict': 'WRONG_ANSWER', 'name': 'Stair, Peak, or Neither?', 'tags': ['implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1950/A'}"}
+{"doc": "{'rating': 3100, 'verdict': 'OK', 'name': 'Division Avoidance', 'tags': ['greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1949/H'}"}
+{"doc": "{'rating': 3100, 'verdict': 'OK', 'name': 'Division Avoidance', 'tags': ['greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1949/H'}"}
+{"doc": "{'rating': 3100, 'verdict': 'RUNTIME_ERROR', 'name': 'Division Avoidance', 'tags': ['greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1949/H'}"}
+{"doc": "{'rating': 3100, 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Division Avoidance', 'tags': ['greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1949/H'}"}
+{"doc": "{'rating': 3100, 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Division Avoidance', 'tags': ['greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1949/H'}"}
+{"doc": "{'rating': 3100, 'verdict': 'WRONG_ANSWER', 'name': 'Division Avoidance', 'tags': ['greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1949/H'}"}
+{"doc": "{'rating': 2900, 'verdict': 'OK', 'name': 'Damage per Second', 'tags': ['brute force', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1949/E'}"}
+{"doc": "{'rating': 2900, 'verdict': 'WRONG_ANSWER', 'name': 'Damage per Second', 'tags': ['brute force', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1949/E'}"}
+{"doc": "{'rating': 3100, 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Division Avoidance', 'tags': ['greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1949/H'}"}
+{"doc": "{'rating': 2600, 'verdict': 'OK', 'name': 'Funny or Scary?', 'tags': ['constructive algorithms'], 'problem_url': 'https://codeforces.com/problemset/problem/1949/D'}"}
+{"doc": "{'rating': 2800, 'verdict': 'OK', 'name': 'Make Triangle', 'tags': ['constructive algorithms', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1949/K'}"}
+{"doc": "{'rating': 2800, 'verdict': 'RUNTIME_ERROR', 'name': 'Make Triangle', 'tags': ['constructive algorithms', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1949/K'}"}

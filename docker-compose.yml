@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  llm-codeforces:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports: 
+      - 8080:8080
+      - 8501:8501
+    stdin_open: true
+    tty: true
+
+  # my-python-script:
+  #   build: .
+  #   command: python ./examples/cf_api/get_problems.py
+  #   volumes:
+  #     - .:/app
+#     networks:
+#       - app-network
+
+# networks:
+#   app-network:
+#     driver: bridge

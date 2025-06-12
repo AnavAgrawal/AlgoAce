@@ -2,25 +2,15 @@ import streamlit as st
 import os
 import sys
 import base64
-import re
 sys.path.append(os.path.abspath(
-os.path.join(os.path.dirname(__file__), '..', '')))
+    os.path.join(os.path.dirname(__file__), '..', '')))
 sys.path.append(os.path.dirname(__file__))
-
-from cf_api import get_data, prompt_enhancer
-from pathway.xpacks.llm.document_store import IndexingStatus
-from pathway.xpacks.llm.question_answering import RAGClient
-from dotenv import load_dotenv
-
-load_dotenv()
-
-PATHWAY_HOST = os.environ.get("PATHWAY_HOST", "0.0.0.0")
-PATHWAY_PORT = os.environ.get("PATHWAY_PORT", 8000)
-
-conn = RAGClient(url=f"http://{PATHWAY_HOST}:{PATHWAY_PORT}")
 
 
 def question_page():
+    from dotenv import load_dotenv
+    import requests
+    from cf_api import get_data
 
     # import cf_data as cf
 
@@ -37,9 +27,6 @@ def question_page():
             placeholder="Python/C++/Java etc.",
             help="Any code output will be in this langauge."
         )
-
-        if not programming_language:
-            programming_language = "Python"
 
         st.markdown(
             "## How to use\n"
@@ -59,7 +46,12 @@ def question_page():
         st.markdown(
             "[View the source code on GitHub](https://github.com/AnavAgrawal/AlgoAce)")
 
-    file_ = open(r"assets/AlgoAce_Logo.jpeg", "rb")
+    # Load environment variables
+    load_dotenv()
+    api_host = os.environ.get("HOST", "0.0.0.0")
+    api_port = int(os.environ.get("PORT", 8080))
+
+    file_ = open(r"assets\AlgoAce_Logo.jpeg", "rb")
     contents = file_.read()
     data_url = base64.b64encode(contents).decode("utf-8")
     file_.close()
@@ -94,49 +86,18 @@ def question_page():
         if not os.path.exists(submissions_path) and not os.path.exists(problems_path):
             st.error("Failed to process file. Please check the codeforces handle")
 
-        # url = f'http://{api_host}:{api_port}/'
-        # data = {"query": question,
-        #         "language": programming_language}
+        url = f'http://{api_host}:{api_port}/'
+        data = {"query": question,
+                "language": programming_language}
 
-        # response = requests.post(url, json=data)
+        response = requests.post(url, json=data)
 
-        # if response.status_code == 200:
-        #     st.write("### Answer")
-        #     st.write(response.json())
-        # else:
-        #     st.error(f"Failed to send data to Codeforces API. Status code: {
-        #              response.status_code}")
-            
-        # query = question + f"\nIf you give any code, please use {programming_language} as the programming language."
-        query = prompt_enhancer.enhance_query(question)
-        
-        # query = question
-
-
-        with st.spinner("Retrieving response..."):
-            api_response = conn.answer(query, return_context_docs=True)
-            response = api_response["response"]
-            context_docs = api_response["context_docs"]
-
-        think_match = re.search(r'<think>(.*?)</think>', response, re.DOTALL)
-        think_content = think_match.group(1).strip() if think_match else ""
-
-        # Remove <think>...</think> block to get the actual response
-        response_content = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL).strip()
-
-        st.write("### Answer")
-
-        with st.expander(label="Show reasoning"):
-            st.write(think_content)
-
-        st.write(response_content)
-
-        # with st.expander(label="Context documents"):
-        #     st.markdown("Documents sent to LLM as context:\n")
-        #     for i, doc in enumerate(context_docs):
-        #         st.markdown(
-        #             f"{i+1}. {doc['text']}\n```"
-        #         )
+        if response.status_code == 200:
+            st.write("### Answer")
+            st.write(response.json())
+        else:
+            st.error(f"Failed to send data to Codeforces API. Status code: {
+                     response.status_code}")
 
 
 def graph_page():
@@ -172,7 +133,7 @@ def graph_page():
 
     # Streamlit UI elements
 
-    HtmlFile = open("ui/graph.html", 'r', encoding='utf-8')
+    HtmlFile = open("examples/ui/graph.html", 'r', encoding='utf-8')
     source_code = HtmlFile.read()
     components.html(source_code, height=1000, width=1100)
 
@@ -190,7 +151,7 @@ demo_name = st.sidebar.selectbox(
 
 with st.sidebar:
 
-    file_ = open(r"assets/AlgoAce_Logo.jpeg", "rb")
+    file_ = open(r"assets\AlgoAce_Logo.jpeg", "rb")
     contents = file_.read()
     data_url = base64.b64encode(contents).decode("utf-8")
     file_.close()
