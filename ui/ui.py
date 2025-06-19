@@ -107,11 +107,8 @@ def question_page():
         #     st.error(f"Failed to send data to Codeforces API. Status code: {
         #              response.status_code}")
             
-        # query = question + f"\nIf you give any code, please use {programming_language} as the programming language."
-        query = prompt_enhancer.enhance_query(question)
-        
-        # query = question
-
+        query = question + f"\nIf you give any code, please use {programming_language} as the programming language."
+        # query = prompt_enhancer.enhance_query(question)
 
         with st.spinner("Retrieving response..."):
             api_response = conn.answer(query, return_context_docs=True)

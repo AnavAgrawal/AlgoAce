@@ -66,9 +66,10 @@ def _prepare_RAG_response(
     return pw.Json(api_response)
 
 class TwoDocQuestionAnswerer(pw.xpacks.llm.question_answering.BaseRAGQuestionAnswerer):
-    def __init__(self, *args, indexer_2=False, **kwargs):
+    def __init__(self, *args, indexer_2=False, indexer_3 = False, **kwargs):
         super().__init__(*args, **kwargs)
         self.indexer_2 = indexer_2
+        self.indexer_3 = indexer_3
 
     @pw.table_transformer
     def answer_query(self, pw_ai_queries: pw.Table) -> pw.Table:
@@ -79,7 +80,7 @@ class TwoDocQuestionAnswerer(pw.xpacks.llm.question_answering.BaseRAGQuestionAns
                 metadata_filter=pw.this.filters,
                 filepath_globpattern=pw.cast(str | None, None),
                 query=pw.this.prompt,
-                k=self.search_topk//2,
+                k=self.search_topk//3,
             )
         ).select(
             docs=pw.this.result,
@@ -90,17 +91,28 @@ class TwoDocQuestionAnswerer(pw.xpacks.llm.question_answering.BaseRAGQuestionAns
                 metadata_filter=pw.this.filters,
                 filepath_globpattern=pw.cast(str | None, None),
                 query=pw.this.prompt,
-                k=self.search_topk//2,
+                k=self.search_topk//3,
             )
             ).select(
                 docs_2=pw.this.result,
             )
+        
+        pw_ai_results += self.indexer_3.retrieve_query(
+            pw_ai_queries.select(
+                metadata_filter=pw.this.filters,
+                filepath_globpattern=pw.cast(str | None, None),
+                query=pw.this.prompt,
+                k=self.search_topk//3,
+            )
+        ).select(
+            docs_3=pw.this.result,
+        )
 
         
         pw_ai_results += pw_ai_results.select(
-            context=self.docs_to_context_transformer(pw.this.docs)+self.docs_to_context_transformer(pw.this.docs_2)
+            context=self.docs_to_context_transformer(pw.this.docs)+self.docs_to_context_transformer(pw.this.docs_2)+
+            self.docs_to_context_transformer(pw.this.docs_3)
         )
-
 
         pw_ai_results += pw_ai_results.select(
             rag_prompt=self.prompt_udf(pw.this.context, pw.this.prompt)
@@ -138,17 +150,20 @@ class TwoDocQuestionAnswerer(pw.xpacks.llm.question_answering.BaseRAGQuestionAns
 if __name__ == "__main__":
 
     prompt_template = '''You are a competitive programming coach. 
-        I will give you the user code submissions and a list of all available problems after "Data:".
-        The data lines with verdict are the user code submissions. 
-        The other lines are the available problems on codeforces.
-        Answer the user query after looking at the user code submissions and the questions he got a wrong answer in.
-        The problems you analyze and suggest should only be from the given data lines without verdict and should be similar in rating to the highest rated problems that the user has attempted.
-        The answer should also explain how you arrived at the answer looking at the user code submissions if necessary. Keep your thinking short.
+        You will be given a list of data rows of three types :
+        First will be the user code submissions. These lines will have a verdict column.
+        Second will be the available problems on codeforces. These lines will not have a verdict column.
+        Third will be the links to the topic explainations on cp-algorithms.com.
+        Then you will be given a user query. You will answer the query based on the data provided.
+        Look at the questions the user got a wrong answer in and try to understand the user's strengths and weaknesses.
+        You can suggest problems to practice from the list of available problems and can also provide links to the relevant topic explainations.
+        The problems you suggest should be similar in rating to the highest rated problems that the user has attempted.
+        You should also explain how you arrived at a recommendation for the user.
         Example query : "What problems should I practice next?"
         Ideal Answer : "Looking at your submissions, you solve questions rated around 1500 and you are facing difficulty in implementing binary search. 
         So here are some binary search problems you can practice: [Links to Binary search problems]."
         Example query : "How to implement dynamic programming?"
-        Ideal Answer : "Here's an implementation of dynamic programming. [Dynamic Programming Code].\n
+        Ideal Answer : "Here's an implementation of dynamic programming. [Dynamic Programming Code]. Here's a link to learn more about dynamic programming [cp-algorithms link]\n
         Data: \n {context} \n{query} /think'''
         # Data: \n {context} \nAnswer this query: {query} /think'''
     
@@ -167,44 +182,50 @@ if __name__ == "__main__":
 
     sources_2 = json_encode(sources_2)
 
-    # Local LLM
-    # llm = pw.xpacks.llm.llms.LiteLLMChat(
-    #     model="ollama/qwen3:4b",
-    #     retry_strategy=pw.udfs.ExponentialBackoffRetryStrategy(
-    #         max_retries=6
-    #     ),
-    #     cache_strategy=pw.udfs.DiskCache(),
-    #     temperature=0,
-    #     top_p=1,
-    #     # format="json",  # only available in Ollama local deploy, not usable in Mistral API
-    #     api_base="http://localhost:11434",
-    #     # generation_kwargs={"num_ctx": 100},
-    #     # num_ctx=100,
-    # )
+    sources_3 = pw.io.jsonlines.read(
+        "data_3",
+        schema=pw.schema_from_dict(columns={"data": "str"}),
+    )
+    sources_3 = json_encode(sources_3)
 
-    llm = pw.xpacks.llm.llms.OpenAIChat(
-        model="gpt-4.1",
+    # Local LLM
+    llm = pw.xpacks.llm.llms.LiteLLMChat(
+        model="ollama/qwen3:4b",
         retry_strategy=pw.udfs.ExponentialBackoffRetryStrategy(
             max_retries=6
         ),
-        cache_strategy=pw.udfs.DefaultCache(),
+        cache_strategy=pw.udfs.DiskCache(),
         temperature=0,
-        capacity=8,
+        top_p=1,
+        # format="json",  # only available in Ollama local deploy, not usable in Mistral API
+        api_base="http://localhost:11434",
+        # generation_kwargs={"num_ctx": 100},
+        # num_ctx=100,
     )
 
-    # Huggingface Embedding
-    # embedding_model = "mixedbread-ai/mxbai-embed-large-v1"
-
-    # embedder = pw.xpacks.llm.embedders.SentenceTransformerEmbedder(
-    #     model=embedding_model,
-    #     call_kwargs={"show_progress_bar": False},
+    # llm = pw.xpacks.llm.llms.OpenAIChat(
+    #     model="gpt-4.1",
+    #     retry_strategy=pw.udfs.ExponentialBackoffRetryStrategy(
+    #         max_retries=6
+    #     ),
+    #     cache_strategy=pw.udfs.DefaultCache(),
+    #     temperature=0,
+    #     capacity=8,
     # )
 
-    # OpenAI Embedding
-    embedder = pw.xpacks.llm.embedders.OpenAIEmbedder(
-        model="text-embedding-3-small",
-        cache_strategy=pw.udfs.DefaultCache(),
+    # Huggingface Embedding
+    embedding_model = "mixedbread-ai/mxbai-embed-large-v1"
+
+    embedder = pw.xpacks.llm.embedders.SentenceTransformerEmbedder(
+        model=embedding_model,
+        call_kwargs={"show_progress_bar": False},
     )
+
+    # # OpenAI Embedding
+    # embedder = pw.xpacks.llm.embedders.OpenAIEmbedder(
+    #     model="text-embedding-3-small",
+    #     cache_strategy=pw.udfs.DefaultCache(),
+    # )
 
 
     splitter = pw.xpacks.llm.splitters.NullSplitter()
@@ -218,6 +239,12 @@ if __name__ == "__main__":
     )
     
     retriever_factory_2 = pw.stdlib.indexing.UsearchKnnFactory(
+        reserved_space=1000,
+        embedder=embedder,
+        metric=pw.stdlib.indexing.USearchMetricKind.COS,
+    )
+
+    retriever_factory_3 = pw.stdlib.indexing.UsearchKnnFactory(
         reserved_space=1000,
         embedder=embedder,
         metric=pw.stdlib.indexing.USearchMetricKind.COS,
@@ -237,10 +264,18 @@ if __name__ == "__main__":
         parser=parser
     )
 
+    document_store_3 = pw.xpacks.llm.document_store.DocumentStore(
+        docs=sources_3,
+        retriever_factory=retriever_factory_3,
+        splitter=splitter,
+        parser=parser
+    )
+
     question_answerer = TwoDocQuestionAnswerer(
         llm=llm,
         indexer=document_store,
         indexer_2=document_store_2,
+        indexer_3=document_store_3,
         search_topk=24,
         prompt_template=prompt_template,
     )

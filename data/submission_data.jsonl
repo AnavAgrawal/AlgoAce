@@ -1,3 +1,14 @@
+{"data": "{'rating': '', 'verdict': 'OK', 'name': 'Yamakasi', 'tags': ['binary search', 'brute force', 'data structures', 'greedy', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/2121/F'}"}
+{"data": "{'rating': '', 'verdict': 'TIME_LIMIT_EXCEEDED', 'name': 'Yamakasi', 'tags': ['binary search', 'brute force', 'data structures', 'greedy', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/2121/F'}"}
+{"data": "{'rating': '', 'verdict': 'OK', 'name': 'Sponsor of Your Problems', 'tags': ['dp', 'greedy', 'implementation', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/2121/E'}"}
+{"data": "{'rating': '', 'verdict': 'OK', 'name': '1709', 'tags': ['implementation', 'sortings'], 'problem_url': 'https://codeforces.com/problemset/problem/2121/D'}"}
+{"data": "{'rating': '', 'verdict': 'OK', 'name': 'Those Who Are With Us', 'tags': ['greedy', 'greedy', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/2121/C'}"}
+{"data": "{'rating': '', 'verdict': 'OK', 'name': 'Above the Clouds', 'tags': ['constructive algorithms', 'greedy', 'strings'], 'problem_url': 'https://codeforces.com/problemset/problem/2121/B'}"}
+{"data": "{'rating': '', 'verdict': 'OK', 'name': 'Letter Home', 'tags': ['brute force', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/2121/A'}"}
+{"data": "{'rating': 1200, 'verdict': 'WRONG_ANSWER', 'name': 'Make It Permutation', 'tags': ['constructive algorithms'], 'problem_url': 'https://codeforces.com/problemset/problem/2118/B'}"}
+{"data": "{'rating': 1300, 'verdict': 'OK', 'name': 'Make It Beautiful', 'tags': ['bitmasks', 'data structures', 'greedy', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/2118/C'}"}
+{"data": "{'rating': 800, 'verdict': 'OK', 'name': 'Equal Subsequences', 'tags': ['constructive algorithms', 'greedy'], 'problem_url': 'https://codeforces.com/problemset/problem/2118/A'}"}
+{"data": "{'rating': 800, 'verdict': 'OK', 'name': 'Common Multiple', 'tags': ['brute force', 'greedy', 'implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/2103/A'}"}
 {"data": "{'rating': 1200, 'verdict': 'OK', 'name': 'Binary Deque', 'tags': ['binary search', 'implementation', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1692/E'}"}
 {"data": "{'rating': 1200, 'verdict': 'WRONG_ANSWER', 'name': 'Binary Deque', 'tags': ['binary search', 'implementation', 'two pointers'], 'problem_url': 'https://codeforces.com/problemset/problem/1692/E'}"}
 {"data": "{'rating': 1200, 'verdict': 'OK', 'name': 'Contrast Value', 'tags': ['greedy', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1832/C'}"}
@@ -287,14 +298,3 @@
 {"data": "{'rating': 1700, 'verdict': 'OK', 'name': 'Journey', 'tags': ['dfs and similar', 'dp', 'dsu', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1476/D'}"}
 {"data": "{'rating': 1600, 'verdict': 'WRONG_ANSWER', 'name': 'Cards Partition', 'tags': ['greedy', 'implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/2019/C'}"}
 {"data": "{'rating': 1600, 'verdict': 'WRONG_ANSWER', 'name': 'Cards Partition', 'tags': ['greedy', 'implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/2019/C'}"}
-{"data": "{'rating': 1200, 'verdict': 'OK', 'name': 'All Pairs Segments', 'tags': ['implementation', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/2019/B'}"}
-{"data": "{'rating': 800, 'verdict': 'OK', 'name': 'Max Plus Size', 'tags': ['brute force', 'dp', 'greedy'], 'problem_url': 'https://codeforces.com/problemset/problem/2019/A'}"}
-{"data": "{'rating': 800, 'verdict': 'RUNTIME_ERROR', 'name': 'Max Plus Size', 'tags': ['brute force', 'dp', 'greedy'], 'problem_url': 'https://codeforces.com/problemset/problem/2019/A'}"}
-{"data": "{'rating': 1700, 'verdict': 'WRONG_ANSWER', 'name': 'Hills And Valleys', 'tags': ['brute force', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1467/B'}"}
-{"data": "{'rating': 1700, 'verdict': 'WRONG_ANSWER', 'name': 'Hills And Valleys', 'tags': ['brute force', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1467/B'}"}
-{"data": "{'rating': 1700, 'verdict': 'WRONG_ANSWER', 'name': 'Hills And Valleys', 'tags': ['brute force', 'implementation'], 'problem_url': 'https://codeforces.com/problemset/problem/1467/B'}"}
-{"data": "{'rating': 1700, 'verdict': 'OK', 'name': 'Beauty of the mountains', 'tags': ['brute force', 'data structures', 'implementation', 'math', 'number theory'], 'problem_url': 'https://codeforces.com/problemset/problem/1982/D'}"}
-{"data": "{'rating': 1600, 'verdict': 'OK', 'name': 'Boboniu and Bit Operations', 'tags': ['bitmasks', 'brute force', 'dp', 'greedy'], 'problem_url': 'https://codeforces.com/problemset/problem/1395/C'}"}
-{"data": "{'rating': 1600, 'verdict': 'WRONG_ANSWER', 'name': 'Boboniu and Bit Operations', 'tags': ['bitmasks', 'brute force', 'dp', 'greedy'], 'problem_url': 'https://codeforces.com/problemset/problem/1395/C'}"}
-{"data": "{'rating': 1700, 'verdict': 'OK', 'name': 'Mixing Water', 'tags': ['binary search', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1359/C'}"}
-{"data": "{'rating': 1700, 'verdict': 'WRONG_ANSWER', 'name': 'Mixing Water', 'tags': ['binary search', 'math'], 'problem_url': 'https://codeforces.com/problemset/problem/1359/C'}"}
