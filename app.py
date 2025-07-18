@@ -168,43 +168,43 @@ if __name__ == "__main__":
     sources_2 = json_encode(sources_2)
 
     # Local LLM
-    # llm = pw.xpacks.llm.llms.LiteLLMChat(
-    #     model="ollama/qwen3:4b",
-    #     retry_strategy=pw.udfs.ExponentialBackoffRetryStrategy(
-    #         max_retries=6
-    #     ),
-    #     cache_strategy=pw.udfs.DiskCache(),
-    #     temperature=0,
-    #     top_p=1,
-    #     # format="json",  # only available in Ollama local deploy, not usable in Mistral API
-    #     api_base="http://localhost:11434",
-    #     # generation_kwargs={"num_ctx": 100},
-    #     # num_ctx=100,
-    # )
-
-    llm = pw.xpacks.llm.llms.OpenAIChat(
-        model="gpt-4.1",
+    llm = pw.xpacks.llm.llms.LiteLLMChat(
+        model="ollama/gemma3",
         retry_strategy=pw.udfs.ExponentialBackoffRetryStrategy(
             max_retries=6
         ),
-        cache_strategy=pw.udfs.DefaultCache(),
+        cache_strategy=pw.udfs.DiskCache(),
         temperature=0,
-        capacity=8,
+        top_p=1,
+        # format="json",  # only available in Ollama local deploy, not usable in Mistral API
+        api_base="http://localhost:11434",
+        # generation_kwargs={"num_ctx": 100},
+        # num_ctx=100,
     )
 
-    # Huggingface Embedding
-    # embedding_model = "mixedbread-ai/mxbai-embed-large-v1"
-
-    # embedder = pw.xpacks.llm.embedders.SentenceTransformerEmbedder(
-    #     model=embedding_model,
-    #     call_kwargs={"show_progress_bar": False},
+    # llm = pw.xpacks.llm.llms.OpenAIChat(
+    #     model="gpt-4.1",
+    #     retry_strategy=pw.udfs.ExponentialBackoffRetryStrategy(
+    #         max_retries=6
+    #     ),
+    #     cache_strategy=pw.udfs.DefaultCache(),
+    #     temperature=0,
+    #     capacity=8,
     # )
 
-    # OpenAI Embedding
-    embedder = pw.xpacks.llm.embedders.OpenAIEmbedder(
-        model="text-embedding-3-small",
-        cache_strategy=pw.udfs.DefaultCache(),
+    # Huggingface Embedding
+    embedding_model = "mixedbread-ai/mxbai-embed-large-v1"
+
+    embedder = pw.xpacks.llm.embedders.SentenceTransformerEmbedder(
+        model=embedding_model,
+        call_kwargs={"show_progress_bar": False},
     )
+
+    # OpenAI Embedding
+    # embedder = pw.xpacks.llm.embedders.OpenAIEmbedder(
+    #     model="text-embedding-3-small",
+    #     cache_strategy=pw.udfs.DefaultCache(),
+    # )
 
 
     splitter = pw.xpacks.llm.splitters.NullSplitter()
