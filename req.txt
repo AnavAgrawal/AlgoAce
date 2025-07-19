@@ -1,0 +1,4 @@
+pathway[xpack-llm-local]
+dotenv
+standard-imghdr
+streamlit

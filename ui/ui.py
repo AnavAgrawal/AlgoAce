@@ -7,7 +7,7 @@ sys.path.append(os.path.abspath(
 os.path.join(os.path.dirname(__file__), '..', '')))
 sys.path.append(os.path.dirname(__file__))
 
-from cf_api import get_data, prompt_enhancer
+from cf_api import get_data#, prompt_enhancer
 from pathway.xpacks.llm.document_store import IndexingStatus
 from pathway.xpacks.llm.question_answering import RAGClient
 from dotenv import load_dotenv
@@ -108,9 +108,9 @@ def question_page():
         #              response.status_code}")
             
         # query = question + f"\nIf you give any code, please use {programming_language} as the programming language."
-        query = prompt_enhancer.enhance_query(question)
+        # query = prompt_enhancer.enhance_query(question)
         
-        # query = question
+        query = question
 
 
         with st.spinner("Retrieving response..."):
