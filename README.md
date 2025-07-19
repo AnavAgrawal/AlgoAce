@@ -122,6 +122,8 @@ AlgoAce is a valuable tool for the competitive programming community, offering p
 
 ## Installation
 
+The following works if you have a working OpenAI key. If you're interested to use a local LLM on ollama, please check [the AlgoAceOff branch](https://github.com/AnavAgrawal/AlgoAce/tree/AlgoAceOff) instead.
+
 ### A. Run with Docker
 
 ### Prerequisites
