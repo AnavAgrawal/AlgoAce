@@ -51,7 +51,7 @@ def question_page():
     api_host = os.environ.get("HOST", "0.0.0.0")
     api_port = int(os.environ.get("PORT", 8080))
 
-    file_ = open(r"assets\AlgoAce_Logo.jpeg", "rb")
+    file_ = open(r"assets/AlgoAce_Logo.jpeg", "rb")
     contents = file_.read()
     data_url = base64.b64encode(contents).decode("utf-8")
     file_.close()
@@ -96,8 +96,7 @@ def question_page():
             st.write("### Answer")
             st.write(response.json())
         else:
-            st.error(f"Failed to send data to Codeforces API. Status code: {
-                     response.status_code}")
+            st.error(f"Failed to send data to Codeforces API. Status code: {response.status_code}")
 
 
 def graph_page():
@@ -151,7 +150,7 @@ demo_name = st.sidebar.selectbox(
 
 with st.sidebar:
 
-    file_ = open(r"assets\AlgoAce_Logo.jpeg", "rb")
+    file_ = open(r"assets/AlgoAce_Logo.jpeg", "rb")
     contents = file_.read()
     data_url = base64.b64encode(contents).decode("utf-8")
     file_.close()
